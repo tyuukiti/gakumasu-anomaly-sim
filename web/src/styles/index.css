@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --color-accent: #4f46e5;       /* indigo-600 */
+  --color-accent-light: #6366f1; /* indigo-500 */
+  --color-bg: #f9fafb;           /* gray-50 */
+  --color-card: #ffffff;
+  --color-border: #e5e7eb;       /* gray-200 */
+}
+
+html, body {
+  background: var(--color-bg);
+  color: #111827;
+  font-family: ui-sans-serif, system-ui, "Segoe UI", "Hiragino Sans",
+    "Yu Gothic UI", "Meiryo", sans-serif;
+}
+
+/* カテゴリ別のチップ色 */
+.chip-free      { background: #dbeafe; color: #1d4ed8; }  /* blue */
+.chip-anomaly   { background: #fce7f3; color: #be185d; }  /* pink */
+.chip-trouble   { background: #fee2e2; color: #b91c1c; }  /* red */
+.chip-pidol     { background: #ede9fe; color: #6d28d9; }  /* purple (固有) */
+
+/* レアリティ別の色 */
+.rarity-N    { color: #6b7280; }
+.rarity-R    { color: #2563eb; }
+.rarity-SR   { color: #9333ea; }
+.rarity-SSR  { color: #d97706; }
+.rarity-Leg  { color: #b91c1c; font-weight: bold; }

@@ -1,0 +1,4109 @@
+cards:
+- id: com_A_N_A_0001
+  name: ブランディングの基本
+  category: anomaly
+  rarity: N
+  type: active
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 12
+    raw_effect_text: 指針を変更した回数が3回以上の場合、使用可 / 強気2段階目に変更 / パラメータ+12
+    unparsed_lines:
+    - 指針を変更した回数が3回以上の場合、使用可
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 21
+    raw_effect_text: 指針を変更した回数が3回以上の場合、使用可 / 強気2段階目に変更 / パラメータ+21
+    unparsed_lines:
+    - 指針を変更した回数が3回以上の場合、使用可
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 21
+    raw_effect_text: 指針を変更した回数が3回以上の場合、使用可 / 強気2段階目に変更 / パラメータ+21
+    unparsed_lines:
+    - 指針を変更した回数が3回以上の場合、使用可
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 21
+    raw_effect_text: 指針を変更した回数が3回以上の場合、使用可 / 強気2段階目に変更 / パラメータ+21
+    unparsed_lines:
+    - 指針を変更した回数が3回以上の場合、使用可
+  _needs_review: false
+- id: com_A_N_A_0002
+  name: 魅せ方の基本
+  category: anomaly
+  rarity: N
+  type: active
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 8
+    raw_effect_text: 強気に変更 / パラメータ+8
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 12
+    raw_effect_text: 強気に変更 / パラメータ+12
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 12
+    raw_effect_text: 強気に変更 / パラメータ+12
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 12
+    raw_effect_text: 強気に変更 / パラメータ+12
+  _needs_review: false
+- id: com_A_N_A_0003
+  name: アドリブの基本
+  category: anomaly
+  rarity: N
+  type: active
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: param
+      value: 15
+    raw_effect_text: 全力値が3以上の場合、使用可 / 全力値+3 / 以降1回まで、ターン開始後、全力の場合、パラメータ+15
+    unparsed_lines:
+    - 全力値が3以上の場合、使用可
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 20
+    raw_effect_text: 全力値が3以上の場合、使用可 / 全力値+4 / 以降1回まで、ターン開始後、全力の場合、パラメータ+20
+    unparsed_lines:
+    - 全力値が3以上の場合、使用可
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 20
+    raw_effect_text: 全力値が3以上の場合、使用可 / 全力値+4 / 以降1回まで、ターン開始後、全力の場合、パラメータ+20
+    unparsed_lines:
+    - 全力値が3以上の場合、使用可
+  - level: +++
+    cost: {}
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 20
+    raw_effect_text: 全力値が3以上の場合、使用可 / 全力値+4 / 以降1回まで、ターン開始後、全力の場合、パラメータ+20
+    unparsed_lines:
+    - 全力値が3以上の場合、使用可
+  _needs_review: false
+- id: com_A_N_A_0004
+  name: スピーチの基本
+  category: anomaly
+  rarity: N
+  type: active
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 5
+    - kind: full_power
+      value: 1
+    raw_effect_text: 強気に変更 / パラメータ+5 / 全力値+1
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 6
+    - kind: full_power
+      value: 2
+    raw_effect_text: 強気に変更 / パラメータ+6 / 全力値+2
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 6
+    - kind: full_power
+      value: 2
+    raw_effect_text: 強気に変更 / パラメータ+6 / 全力値+2
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 6
+    - kind: full_power
+      value: 2
+    raw_effect_text: 強気に変更 / パラメータ+6 / 全力値+2
+  _needs_review: false
+- id: com_A_N_A_0005
+  name: 挨拶の基本
+  category: anomaly
+  rarity: N
+  type: active
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    raw_effect_text: 強気に変更
+  - level: +
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: genki
+      value: 4
+    raw_effect_text: 強気に変更 / 元気+4
+  - level: ++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: genki
+      value: 5
+    raw_effect_text: 強気に変更 / 元気+5
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: genki
+      value: 6
+    raw_effect_text: 強気に変更 / 元気+6
+  _needs_review: false
+- id: com_A_N_A_0006
+  name: はげしく
+  category: anomaly
+  rarity: N
+  type: active
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 7
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 15
+    raw_effect_text: 強気に変更 / パラメータ+15
+  - level: +
+    cost:
+      hp: 7
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 25
+    raw_effect_text: 強気に変更 / パラメータ+25
+  - level: ++
+    cost:
+      hp: 6
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 25
+    raw_effect_text: 強気に変更 / パラメータ+25
+  - level: +++
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 25
+    raw_effect_text: 強気に変更 / パラメータ+25
+  _needs_review: false
+- id: com_A_N_A_0007
+  name: スパート
+  category: anomaly
+  rarity: N
+  type: active
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: full_power
+      value: 1
+    - kind: param
+      value: 25
+    raw_effect_text: 全力値+1 / 温存の場合、自身を保留に移動 / 全力の場合、パラメータ+25
+    unparsed_lines:
+    - 温存の場合、自身を保留に移動
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: full_power
+      value: 1
+    - kind: param
+      value: 25
+    raw_effect_text: 全力値+1 / 温存の場合、自身を保留に移動 / 全力の場合、パラメータ+25
+    unparsed_lines:
+    - 温存の場合、自身を保留に移動
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: full_power
+      value: 1
+    - kind: param
+      value: 25
+    raw_effect_text: 全力値+1 / 温存の場合、自身を保留に移動 / 全力の場合、パラメータ+25
+    unparsed_lines:
+    - 温存の場合、自身を保留に移動
+  - level: +++
+    cost: {}
+    effects:
+    - kind: full_power
+      value: 1
+    - kind: param
+      value: 25
+    raw_effect_text: 全力値+1 / 温存の場合、自身を保留に移動 / 全力の場合、パラメータ+25
+    unparsed_lines:
+    - 温存の場合、自身を保留に移動
+  _needs_review: false
+- id: com_A_N_M_0001
+  name: 立ち回りの基本
+  category: anomaly
+  rarity: N
+  type: mental
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 5
+    raw_effect_text: 温存に変更 / 元気+5
+  - level: +
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 7
+    raw_effect_text: 温存に変更 / 元気+7
+  - level: ++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 8
+    raw_effect_text: 温存に変更 / 元気+8
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 9
+    raw_effect_text: 温存に変更 / 元気+9
+  _needs_review: false
+- id: com_A_N_M_0002
+  name: ウォームアップの基本
+  category: anomaly
+  rarity: N
+  type: mental
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    - kind: full_power
+      value: 1
+    raw_effect_text: 温存2段階目に変更 / 全力値+1
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    - kind: full_power
+      value: 2
+    raw_effect_text: 温存2段階目に変更 / 全力値+2
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    - kind: full_power
+      value: 2
+    raw_effect_text: 温存2段階目に変更 / 全力値+2
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    - kind: full_power
+      value: 2
+    raw_effect_text: 温存2段階目に変更 / 全力値+2
+  _needs_review: false
+- id: com_A_N_M_0003
+  name: 自己管理の基本
+  category: anomaly
+  rarity: N
+  type: mental
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: full_power
+      value: 2
+    raw_effect_text: 温存に変更 / 全力値+2
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: full_power
+      value: 3
+    raw_effect_text: 温存に変更 / 全力値+3
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: full_power
+      value: 3
+    raw_effect_text: 温存に変更 / 全力値+3
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: full_power
+      value: 3
+    raw_effect_text: 温存に変更 / 全力値+3
+  _needs_review: false
+- id: com_A_N_M_0004
+  name: レスポンスの基本
+  category: anomaly
+  rarity: N
+  type: mental
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: genki
+      value: 4
+    - kind: full_power
+      value: 2
+    raw_effect_text: 元気+4 / 全力値+2 / 手札を選択し、保留に移動
+    unparsed_lines:
+    - 手札を選択し、保留に移動
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: genki
+      value: 6
+    - kind: full_power
+      value: 3
+    raw_effect_text: 元気+6 / 全力値+3 / 手札を選択し、保留に移動
+    unparsed_lines:
+    - 手札を選択し、保留に移動
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 6
+    - kind: full_power
+      value: 3
+    raw_effect_text: 元気+6 / 全力値+3 / 手札を選択し、保留に移動
+    unparsed_lines:
+    - 手札を選択し、保留に移動
+  - level: +++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 6
+    - kind: full_power
+      value: 3
+    raw_effect_text: 元気+6 / 全力値+3 / 手札を選択し、保留に移動
+    unparsed_lines:
+    - 手札を選択し、保留に移動
+  _needs_review: false
+- id: com_A_N_M_0005
+  name: メントレの基本
+  category: anomaly
+  rarity: N
+  type: mental
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: genki
+      value: 2
+    - kind: full_power
+      value: 2
+    raw_effect_text: 元気+2 / 全力値+2
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: genki
+      value: 3
+    - kind: full_power
+      value: 3
+    raw_effect_text: 元気+3 / 全力値+3
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: genki
+      value: 3
+    - kind: full_power
+      value: 3
+    raw_effect_text: 元気+3 / 全力値+3
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 3
+    - kind: full_power
+      value: 3
+    raw_effect_text: 元気+3 / 全力値+3
+  _needs_review: false
+- id: com_A_N_M_0006
+  name: イメージの基本
+  category: anomaly
+  rarity: N
+  type: mental
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 2
+    raw_effect_text: 温存に変更 / 元気+2
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 6
+    raw_effect_text: 温存に変更 / 元気+6
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 6
+    raw_effect_text: 温存に変更 / 元気+6
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 6
+    raw_effect_text: 温存に変更 / 元気+6
+  _needs_review: false
+- id: com_A_R_A_0001
+  name: ジャストアピール
+  category: anomaly
+  rarity: R
+  type: active
+  custom_limit: '3'
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 7
+    effects:
+    - kind: param
+      value: 15
+    - kind: full_power
+      value: 2
+    raw_effect_text: パラメータ+15 / 全力値+2
+  - level: +
+    cost:
+      hp: 5
+    effects:
+    - kind: param
+      value: 15
+    - kind: full_power
+      value: 3
+    raw_effect_text: パラメータ+15 / 全力値+3
+  - level: ++
+    cost:
+      hp: 4
+    effects:
+    - kind: param
+      value: 15
+    - kind: full_power
+      value: 3
+    raw_effect_text: パラメータ+15 / 全力値+3
+  - level: +++
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 15
+    - kind: full_power
+      value: 3
+    raw_effect_text: パラメータ+15 / 全力値+3
+  _needs_review: false
+- id: com_A_R_A_0002
+  name: スターライト
+  category: anomaly
+  rarity: R
+  type: active
+  custom_limit: '3'
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 6
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 9
+    raw_effect_text: 強気に変更 / パラメータ+9
+  - level: +
+    cost:
+      hp: 6
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 18
+    raw_effect_text: 強気に変更 / パラメータ+18
+  - level: ++
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 18
+    raw_effect_text: 強気に変更 / パラメータ+18
+  - level: +++
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 18
+    raw_effect_text: 強気に変更 / パラメータ+18
+  _needs_review: false
+- id: com_A_R_A_0003
+  name: 一歩
+  category: anomaly
+  rarity: R
+  type: active
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    PLv2で解放
+
+    形勢逆転
+
+    との
+
+    スイッチ'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: param
+      value: 15
+    raw_effect_text: パラメータ+15
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: param
+      value: 23
+    raw_effect_text: パラメータ+23
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 23
+    raw_effect_text: パラメータ+23
+  - level: +++
+    cost:
+      hp: 2
+    effects:
+    - kind: param
+      value: 23
+    raw_effect_text: パラメータ+23
+  _needs_review: false
+- id: com_A_R_A_0004
+  name: ラッキー♪
+  category: anomaly
+  rarity: R
+  type: active
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    PLv9で解放
+
+    ノンストップ
+
+    との
+
+    スイッチ'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 8
+    - kind: full_power
+      value: 3
+    raw_effect_text: パラメータ+8 / 強気の場合、全力値+3
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: param
+      value: 10
+    - kind: full_power
+      value: 4
+    raw_effect_text: パラメータ+10 / 強気の場合、全力値+4
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: param
+      value: 10
+    - kind: full_power
+      value: 4
+    raw_effect_text: パラメータ+10 / 強気の場合、全力値+4
+  - level: +++
+    cost: {}
+    effects:
+    - kind: param
+      value: 10
+    - kind: full_power
+      value: 4
+    raw_effect_text: パラメータ+10 / 強気の場合、全力値+4
+  _needs_review: false
+- id: com_A_R_A_0005
+  name: 積み重ね
+  category: anomaly
+  rarity: R
+  type: active
+  custom_limit: '3'
+  remark: PLv13で解放
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: full_power
+      value: 2
+    - kind: param
+      value: 20
+    raw_effect_text: 全力値+2 / 温存の場合、自身を保留に移動 / 全力の場合、パラメータ+20
+    unparsed_lines:
+    - 温存の場合、自身を保留に移動
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: full_power
+      value: 2
+    - kind: param
+      value: 35
+    raw_effect_text: 全力値+2 / 温存の場合、自身を保留に移動 / 全力の場合、パラメータ+35
+    unparsed_lines:
+    - 温存の場合、自身を保留に移動
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: full_power
+      value: 2
+    - kind: param
+      value: 35
+    raw_effect_text: 全力値+2 / 温存の場合、自身を保留に移動 / 全力の場合、パラメータ+35
+    unparsed_lines:
+    - 温存の場合、自身を保留に移動
+  - level: +++
+    cost: {}
+    effects:
+    - kind: full_power
+      value: 2
+    - kind: param
+      value: 35
+    raw_effect_text: 全力値+2 / 温存の場合、自身を保留に移動 / 全力の場合、パラメータ+35
+    unparsed_lines:
+    - 温存の場合、自身を保留に移動
+  _needs_review: false
+- id: com_A_R_A_0006
+  name: 精一杯
+  category: anomaly
+  rarity: R
+  type: active
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    PLv14で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 6
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 6
+      note:
+        count: 2
+    raw_effect_text: 強気に変更 / パラメータ+6 （2回）
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 7
+      note:
+        count: 2
+    raw_effect_text: 強気に変更 / パラメータ+7 （2回）
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 7
+      note:
+        count: 2
+    raw_effect_text: 強気に変更 / パラメータ+7 （2回）
+  - level: +++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 7
+      note:
+        count: 2
+    raw_effect_text: 強気に変更 / パラメータ+7 （2回）
+  _needs_review: false
+- id: com_A_R_A_0007
+  name: 形勢逆転
+  category: anomaly
+  rarity: R
+  type: active
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    PLv51で解放
+
+    一歩
+
+    との
+
+    スイッチ'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 9
+    raw_effect_text: 強気に変更 / パラメータ+9 / 除外以外にあるトラブルカードが2枚以上の場合、スキルカードを引く
+    unparsed_lines:
+    - 除外以外にあるトラブルカードが2枚以上の場合、スキルカードを引く
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 13
+    - kind: draw
+      value: 2
+    raw_effect_text: 強気に変更 / パラメータ+13 / 除外以外にあるトラブルカードが2枚以上の場合、スキルカードを2枚引く
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 13
+    - kind: draw
+      value: 2
+    raw_effect_text: 強気に変更 / パラメータ+13 / 除外以外にあるトラブルカードが2枚以上の場合、スキルカードを2枚引く
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 13
+    - kind: draw
+      value: 2
+    raw_effect_text: 強気に変更 / パラメータ+13 / 除外以外にあるトラブルカードが2枚以上の場合、スキルカードを2枚引く
+  _needs_review: false
+- id: com_A_R_A_0008
+  name: ノンストップ
+  category: anomaly
+  rarity: R
+  type: active
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    PLv52で解放
+
+    ラッキー♪
+
+    との
+
+    スイッチ'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: full_power
+      value: 2
+    - kind: param
+      value: 20
+    raw_effect_text: 全力値+2 / 以降1回まで、ターン開始時、全力の場合、パラメータ+20 / 除外以外にあるトラブルカードが2枚以上の場合、手札を選択し、保留に移動
+    unparsed_lines:
+    - 除外以外にあるトラブルカードが2枚以上の場合、手札を選択し、保留に移動
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: param
+      value: 20
+    raw_effect_text: 全力値+3 / 以降1回まで、ターン開始時、全力の場合、パラメータ+20 / 除外以外にあるトラブルカードが2枚以上の場合、手札を選択し、保留に移動
+    unparsed_lines:
+    - 除外以外にあるトラブルカードが2枚以上の場合、手札を選択し、保留に移動
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: param
+      value: 20
+    raw_effect_text: 全力値+3 / 以降1回まで、ターン開始時、全力の場合、パラメータ+20 / 除外以外にあるトラブルカードが2枚以上の場合、手札を選択し、保留に移動
+    unparsed_lines:
+    - 除外以外にあるトラブルカードが2枚以上の場合、手札を選択し、保留に移動
+  - level: +++
+    cost: {}
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: param
+      value: 20
+    raw_effect_text: 全力値+3 / 以降1回まで、ターン開始時、全力の場合、パラメータ+20 / 除外以外にあるトラブルカードが2枚以上の場合、手札を選択し、保留に移動
+    unparsed_lines:
+    - 除外以外にあるトラブルカードが2枚以上の場合、手札を選択し、保留に移動
+  _needs_review: false
+- id: com_A_R_A_0009
+  name: ハッスル
+  category: anomaly
+  rarity: R
+  type: active
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    PLv71で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: full_power
+      value: 2
+    - kind: param_boost
+      value: 4
+    raw_effect_text: 強気に変更 / 全力値+2 / アクティブスキルカードのパラメータ値増加+4
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: full_power
+      value: 3
+    - kind: param_boost
+      value: 6
+    raw_effect_text: 強気に変更 / 全力値+3 / アクティブスキルカードのパラメータ値増加+6
+  - level: ++
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: full_power
+      value: 3
+    - kind: param_boost
+      value: 8
+    raw_effect_text: 強気に変更 / 全力値+3 / アクティブスキルカードのパラメータ値増加+8
+  - level: +++
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: full_power
+      value: 3
+    - kind: param_boost
+      value: 10
+    raw_effect_text: 強気に変更 / 全力値+3 / アクティブスキルカードのパラメータ値増加+10
+  _needs_review: false
+- id: com_A_R_M_0001
+  name: ハッピー♪
+  category: anomaly
+  rarity: R
+  type: mental
+  custom_limit: '3'
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 7
+    raw_effect_text: 温存に変更 / 元気+7
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 10
+    raw_effect_text: 温存に変更 / 元気+10
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 10
+    raw_effect_text: 温存に変更 / 元気+10
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 10
+    raw_effect_text: 温存に変更 / 元気+10
+  _needs_review: false
+- id: com_A_R_M_0002
+  name: 嬉しい誤算
+  category: anomaly
+  rarity: R
+  type: mental
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    PLv4で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: genki
+      value: 5
+    - kind: full_power
+      value: 2
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    raw_effect_text: 元気+5 / 全力値+2 / 全力値が1以上の場合、温存に変更
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: genki
+      value: 6
+    - kind: full_power
+      value: 3
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    raw_effect_text: 元気+6 / 全力値+3 / 全力値が1以上の場合、温存に変更
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: genki
+      value: 6
+    - kind: full_power
+      value: 3
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    raw_effect_text: 元気+6 / 全力値+3 / 全力値が1以上の場合、温存に変更
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 6
+    - kind: full_power
+      value: 3
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    raw_effect_text: 元気+6 / 全力値+3 / 全力値が1以上の場合、温存に変更
+  _needs_review: false
+- id: com_A_R_M_0003
+  name: 涙の思い出
+  category: anomaly
+  rarity: R
+  type: mental
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    PLv19で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 2
+    - kind: full_power
+      value: 3
+    raw_effect_text: 温存に変更 / 元気+2 / 強気の場合、全力値+3
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 4
+    - kind: full_power
+      value: 4
+    raw_effect_text: 温存に変更 / 元気+4 / 強気の場合、全力値+4
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 4
+    - kind: full_power
+      value: 4
+    raw_effect_text: 温存に変更 / 元気+4 / 強気の場合、全力値+4
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 4
+    - kind: full_power
+      value: 4
+    raw_effect_text: 温存に変更 / 元気+4 / 強気の場合、全力値+4
+  _needs_review: false
+- id: com_A_R_M_0004
+  name: セッティング
+  category: anomaly
+  rarity: R
+  type: mental
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv47で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: full_power
+      value: 5
+    raw_effect_text: 全力値が5以上の場合、使用可 / 全力値+5 / 次のターン、手札のパラメータ値増加+8
+    unparsed_lines:
+    - 全力値が5以上の場合、使用可
+    - '[delayed/conditional] 次のターン、手札のパラメータ値増加+8'
+  - level: +
+    cost: {}
+    effects:
+    - kind: full_power
+      value: 5
+    raw_effect_text: 全力値が5以上の場合、使用可 / 全力値+5 / 次のターン、手札のパラメータ値増加+8
+    unparsed_lines:
+    - 全力値が5以上の場合、使用可
+    - '[delayed/conditional] 次のターン、手札のパラメータ値増加+8'
+  - level: ++
+    cost: {}
+    effects:
+    - kind: full_power
+      value: 5
+    - kind: genki
+      value: 3
+    raw_effect_text: 全力値が5以上の場合、使用可 / 全力値+5 / 次のターン、手札のパラメータ値増加+8 / 元気+3
+    unparsed_lines:
+    - 全力値が5以上の場合、使用可
+    - '[delayed/conditional] 次のターン、手札のパラメータ値増加+8'
+  - level: +++
+    cost: {}
+    effects:
+    - kind: full_power
+      value: 5
+    - kind: genki
+      value: 6
+    raw_effect_text: 全力値が5以上の場合、使用可 / 全力値+5 / 次のターン、手札のパラメータ値増加+8 / 元気+6
+    unparsed_lines:
+    - 全力値が5以上の場合、使用可
+    - '[delayed/conditional] 次のターン、手札のパラメータ値増加+8'
+  _needs_review: false
+- id: com_A_R_M_0005
+  name: 巻き返し
+  category: anomaly
+  rarity: R
+  type: mental
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    PLv66で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      full_power: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: passion_add
+      value: 3
+    raw_effect_text: 温存に変更 / 熱意追加+3 / すべてのスキルカードのコスト値減少-1
+    unparsed_lines:
+    - すべてのスキルカードのコスト値減少-1
+  - level: +
+    cost:
+      full_power: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: passion_add
+      value: 6
+    raw_effect_text: 温存に変更 / 熱意追加+6 / すべてのスキルカードのコスト値減少-1
+    unparsed_lines:
+    - すべてのスキルカードのコスト値減少-1
+  - level: ++
+    cost:
+      full_power: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: passion_add
+      value: 7
+    raw_effect_text: 温存に変更 / 熱意追加+7 / すべてのスキルカードのコスト値減少-1
+    unparsed_lines:
+    - すべてのスキルカードのコスト値減少-1
+  - level: +++
+    cost:
+      full_power: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: passion_add
+      value: 8
+    raw_effect_text: 温存に変更 / 熱意追加+8 / すべてのスキルカードのコスト値減少-1
+    unparsed_lines:
+    - すべてのスキルカードのコスト値減少-1
+  _needs_review: false
+- id: com_A_SR_A_0001
+  name: せーのっ！
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: 'フルスロットル
+
+    との
+
+    スイッチ'
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 12
+    raw_effect_text: 強気に変更 / パラメータ+12
+  - level: +
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 22
+    raw_effect_text: 強気に変更 / パラメータ+22
+  - level: ++
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 22
+    raw_effect_text: 強気に変更 / パラメータ+22
+  - level: +++
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 22
+    raw_effect_text: 強気に変更 / パラメータ+22
+  _needs_review: false
+- id: com_A_SR_A_0002
+  name: アッチェレランド
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: param
+      value: 10
+    - kind: full_power
+      value: 3
+    raw_effect_text: パラメータ+10 / 全力値+3
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: param
+      value: 12
+    - kind: full_power
+      value: 4
+    raw_effect_text: パラメータ+12 / 全力値+4
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 12
+    - kind: full_power
+      value: 4
+    raw_effect_text: パラメータ+12 / 全力値+4
+  - level: +++
+    cost:
+      hp: 2
+    effects:
+    - kind: param
+      value: 12
+    - kind: full_power
+      value: 4
+    raw_effect_text: パラメータ+12 / 全力値+4
+  _needs_review: false
+- id: com_A_SR_A_0003
+  name: はじけるパッション
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    PLv6で解放
+
+    オーバードライブ
+
+    との
+
+    スイッチ'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: param
+      value: 8
+      note:
+        count: 2
+    raw_effect_text: いずれかの指針の場合、使用可 / パラメータ+8（2回）
+    unparsed_lines:
+    - いずれかの指針の場合、使用可
+  - level: +
+    cost:
+      hp: 1
+    effects:
+    - kind: param
+      value: 10
+      note:
+        count: 2
+    raw_effect_text: いずれかの指針の場合、使用可 / パラメータ+10（2回）
+    unparsed_lines:
+    - いずれかの指針の場合、使用可
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: param
+      value: 12
+      note:
+        count: 2
+    raw_effect_text: いずれかの指針の場合、使用可 / パラメータ+12（2回）
+    unparsed_lines:
+    - いずれかの指針の場合、使用可
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: param
+      value: 14
+      note:
+        count: 2
+    raw_effect_text: いずれかの指針の場合、使用可 / パラメータ+14（2回）
+    unparsed_lines:
+    - いずれかの指針の場合、使用可
+  _needs_review: false
+- id: com_A_SR_A_0004
+  name: 汗と成長
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    PLv7で解放
+
+    リスキーチャンス
+
+    との
+
+    スイッチ'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 1
+    effects:
+    - kind: param
+      value: 37
+    raw_effect_text: 全力の場合、使用可 / パラメータ+37
+    unparsed_lines:
+    - 全力の場合、使用可
+  - level: +
+    cost: {}
+    effects:
+    - kind: param
+      value: 47
+    raw_effect_text: 全力の場合、使用可 / パラメータ+47
+    unparsed_lines:
+    - 全力の場合、使用可
+  - level: ++
+    cost: {}
+    effects:
+    - kind: param
+      value: 53
+    raw_effect_text: 全力の場合、使用可 / パラメータ+53
+    unparsed_lines:
+    - 全力の場合、使用可
+  - level: +++
+    cost: {}
+    effects:
+    - kind: param
+      value: 60
+    raw_effect_text: 全力の場合、使用可 / パラメータ+60
+    unparsed_lines:
+    - 全力の場合、使用可
+  _needs_review: false
+- id: com_A_SR_A_0005
+  name: 第一印象
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv18で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    raw_effect_text: 強気に変更 / 以降、強気効果のスキルカード使用時、すべてのスキルカードのパラメータ値増加+2
+    unparsed_lines:
+    - '[delayed/conditional] 以降、強気効果のスキルカード使用時、すべてのスキルカードのパラメータ値増加+2'
+  - level: +
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    raw_effect_text: 強気に変更 / 以降、強気効果のスキルカード使用時、すべてのスキルカードのパラメータ値増加+3
+    unparsed_lines:
+    - '[delayed/conditional] 以降、強気効果のスキルカード使用時、すべてのスキルカードのパラメータ値増加+3'
+  - level: ++
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    raw_effect_text: 強気に変更 / 以降、強気効果のスキルカード使用時、すべてのスキルカードのパラメータ値増加+3
+    unparsed_lines:
+    - '[delayed/conditional] 以降、強気効果のスキルカード使用時、すべてのスキルカードのパラメータ値増加+3'
+  - level: +++
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    raw_effect_text: 強気に変更 / 以降、強気効果のスキルカード使用時、すべてのスキルカードのパラメータ値増加+3
+    unparsed_lines:
+    - '[delayed/conditional] 以降、強気効果のスキルカード使用時、すべてのスキルカードのパラメータ値増加+3'
+  _needs_review: false
+- id: com_A_SR_A_0006
+  name: オープニングアクト
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    PLv29で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 10
+    - kind: full_power
+      value: 2
+    raw_effect_text: 強気に変更 / パラメータ+10 / 全力値+2
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 14
+    - kind: full_power
+      value: 3
+    raw_effect_text: 強気に変更 / パラメータ+14 / 全力値+3
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 14
+    - kind: full_power
+      value: 3
+    raw_effect_text: 強気に変更 / パラメータ+14 / 全力値+3
+  - level: +++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 14
+    - kind: full_power
+      value: 3
+    raw_effect_text: 強気に変更 / パラメータ+14 / 全力値+3
+  _needs_review: false
+- id: com_A_SR_A_0007
+  name: 始まりの笑顔
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: '重複不可
+
+    PLv34で解放'
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      full_power: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 6
+    raw_effect_text: 強気に変更 / パラメータ+6 / 消費体力減少2ターン / 次のターン、スキルカードを引く
+    unparsed_lines:
+    - 消費体力減少2ターン
+    - '[delayed/conditional] 次のターン、スキルカードを引く'
+  - level: +
+    cost:
+      full_power: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 8
+    raw_effect_text: 強気に変更 / パラメータ+8 / 消費体力減少2ターン / 次のターン、スキルカードを引く
+    unparsed_lines:
+    - 消費体力減少2ターン
+    - '[delayed/conditional] 次のターン、スキルカードを引く'
+  - level: ++
+    cost:
+      full_power: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 11
+    raw_effect_text: 強気に変更 / パラメータ+11 / 消費体力減少2ターン / 次のターン、スキルカードを引く
+    unparsed_lines:
+    - 消費体力減少2ターン
+    - '[delayed/conditional] 次のターン、スキルカードを引く'
+  - level: +++
+    cost:
+      full_power: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 15
+    raw_effect_text: 強気に変更 / パラメータ+15 / 消費体力減少2ターン / 次のターン、スキルカードを引く
+    unparsed_lines:
+    - 消費体力減少2ターン
+    - '[delayed/conditional] 次のターン、スキルカードを引く'
+  _needs_review: false
+- id: com_A_SR_A_0008
+  name: トレンドリーダー
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '1'
+  remark: '重複不可
+
+    PLv36で解放
+
+    全力でも非全力でも使用すると保留に移動する
+
+    非全力時はカード使用数+1がつく
+
+    全力時に使用したときのみ次回からの全力値コストが増加する'
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      full_power: 2
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: param
+      value: 3
+    raw_effect_text: 自身を保留に移動 / 非全力状態の場合、スキルカード使用数追加+1 / 全力の場合、パラメータ+3（累積全力値の50%分、パラメータ上昇量増加・2回） / 成長：自身使用後、全力の場合、自身のパラメータ値増加+5・全力値コスト値増加+1（4回まで）
+    growth:
+      max_count: 4
+      per_fire:
+        paramValueIncrease: 5
+    unparsed_lines:
+    - 自身を保留に移動
+    - '[delayed/conditional] 成長：自身使用後、全力の場合、自身のパラメータ値増加+5・全力値コスト値増加+1（4回まで）'
+  - level: +
+    cost:
+      full_power: 2
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: param
+      value: 10
+    raw_effect_text: 自身を保留に移動 / 非全力状態の場合、スキルカード使用数追加+1 / 全力の場合、パラメータ+10（累積全力値の100%分、パラメータ上昇量増加・2回） / 成長：自身使用後、全力の場合、自身のパラメータ値増加+5・全力値コスト値増加+1（4回まで）
+    growth:
+      max_count: 4
+      per_fire:
+        paramValueIncrease: 5
+    unparsed_lines:
+    - 自身を保留に移動
+    - '[delayed/conditional] 成長：自身使用後、全力の場合、自身のパラメータ値増加+5・全力値コスト値増加+1（4回まで）'
+  - level: ++
+    cost:
+      full_power: 2
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: param
+      value: 12
+    raw_effect_text: 自身を保留に移動 / 非全力状態の場合、スキルカード使用数追加+1 / 全力の場合、パラメータ+12（累積全力値の120%分、パラメータ上昇量増加・2回） / 成長：自身使用後、全力の場合、自身のパラメータ値増加+5・全力値コスト値増加+1（4回まで）
+    growth:
+      max_count: 4
+      per_fire:
+        paramValueIncrease: 5
+    unparsed_lines:
+    - 自身を保留に移動
+    - '[delayed/conditional] 成長：自身使用後、全力の場合、自身のパラメータ値増加+5・全力値コスト値増加+1（4回まで）'
+  - level: +++
+    cost:
+      full_power: 2
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: param
+      value: 14
+    raw_effect_text: 自身を保留に移動 / 非全力状態の場合、スキルカード使用数追加+1 / 全力の場合、パラメータ+14（累積全力値の140%分、パラメータ上昇量増加・2回） / 成長：自身使用後、全力の場合、自身のパラメータ値増加+5・全力値コスト値増加+1（4回まで）
+    growth:
+      max_count: 4
+      per_fire:
+        paramValueIncrease: 5
+    unparsed_lines:
+    - 自身を保留に移動
+    - '[delayed/conditional] 成長：自身使用後、全力の場合、自身のパラメータ値増加+5・全力値コスト値増加+1（4回まで）'
+  _needs_review: false
+- id: com_A_SR_A_0009
+  name: 理想のテンポ
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: '2026/03/31上方修正
+
+    レッスン中1回
+
+    PLv52で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: param
+      value: 6
+      note:
+        count: 2
+    - kind: extra_use
+      value: 1
+    raw_effect_text: パラメータ+6（2回） / 非温存状態の場合、スキルカード使用数追加+1 / 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+5
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 5
+    unparsed_lines:
+    - '[delayed/conditional] 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+5'
+  - level: +
+    cost:
+      hp: 5
+    effects:
+    - kind: param
+      value: 6
+      note:
+        count: 2
+    - kind: extra_use
+      value: 1
+    raw_effect_text: パラメータ+6（2回） / 非温存状態の場合、スキルカード使用数追加+1 / 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+7
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 7
+    unparsed_lines:
+    - '[delayed/conditional] 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+7'
+  - level: ++
+    cost:
+      hp: 4
+    effects:
+    - kind: param
+      value: 6
+      note:
+        count: 2
+    - kind: extra_use
+      value: 1
+    raw_effect_text: パラメータ+6（2回） / 非温存状態の場合、スキルカード使用数追加+1 / 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+7
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 7
+    unparsed_lines:
+    - '[delayed/conditional] 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+7'
+  - level: +++
+    cost:
+      hp: 4
+    effects:
+    - kind: param
+      value: 6
+      note:
+        count: 2
+    - kind: extra_use
+      value: 1
+    raw_effect_text: パラメータ+6（2回） / 非温存状態の場合、スキルカード使用数追加+1 / 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+8
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 8
+    unparsed_lines:
+    - '[delayed/conditional] 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+8'
+  _needs_review: false
+- id: com_A_SR_A_0010
+  name: トレーニングの成果
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: '2026/03/31上方修正
+
+    レッスン中1回
+
+    PLv58で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: param
+      value: 28
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    raw_effect_text: 全力値+3 / パラメータ+28（累積全力値の100%分、パラメータ上昇量増加） / 以降1回まで、全力を解除後、非全力状態の場合、温存2段階目に変更
+  - level: +
+    cost:
+      hp: 5
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 28
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    raw_effect_text: 全力値+4 / パラメータ+28（累積全力値の200%分、パラメータ上昇量増加） / 以降1回まで、全力を解除後、非全力状態の場合、温存2段階目に変更
+  - level: ++
+    cost:
+      hp: 5
+    effects:
+    - kind: full_power
+      value: 5
+    - kind: param
+      value: 28
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    raw_effect_text: 全力値+5 / パラメータ+28（累積全力値の200%分、パラメータ上昇量増加） / 以降1回まで、全力を解除後、非全力状態の場合、温存2段階目に変更
+  - level: +++
+    cost:
+      raw: ﾇｹ
+    effects: []
+    raw_effect_text: ''
+  _needs_review: false
+- id: com_A_SR_A_0011
+  name: オーバードライブ
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '1'
+  remark: '重複不可
+
+    PLv58で解放
+
+    はじけるパッション
+
+    との
+
+    スイッチ'
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 4
+    - kind: full_power
+      value: 2
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 強気に変更 / パラメータ+4 / 全力値+2 / スキルカード使用数追加+1 / 眠気を山札のランダムな位置に生成 / 次のターン、温存に変更
+    unparsed_lines:
+    - 眠気を山札のランダムな位置に生成
+    - '[delayed/conditional] 次のターン、温存に変更'
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 4
+      note:
+        count: 2
+    - kind: full_power
+      value: 2
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 強気に変更 / パラメータ+4（2回） / 全力値+2 / スキルカード使用数追加+1 / 眠気を山札のランダムな位置に生成 / 次のターン、温存に変更
+    unparsed_lines:
+    - 眠気を山札のランダムな位置に生成
+    - '[delayed/conditional] 次のターン、温存に変更'
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 4
+      note:
+        count: 2
+    - kind: full_power
+      value: 2
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 強気に変更 / パラメータ+4（2回） / 全力値+2 / スキルカード使用数追加+1 / 眠気を山札のランダムな位置に生成 / 次のターン、温存に変更
+    unparsed_lines:
+    - 眠気を山札のランダムな位置に生成
+    - '[delayed/conditional] 次のターン、温存に変更'
+  - level: +++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 4
+      note:
+        count: 2
+    - kind: full_power
+      value: 2
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 強気に変更 / パラメータ+4（2回） / 全力値+2 / スキルカード使用数追加+1 / 眠気を山札のランダムな位置に生成 / 次のターン、温存に変更
+    unparsed_lines:
+    - 眠気を山札のランダムな位置に生成
+    - '[delayed/conditional] 次のターン、温存に変更'
+  _needs_review: false
+- id: com_A_SR_A_0012
+  name: アンダンテ
+  category: anomaly
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    PLv73で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      full_power: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 10
+    - kind: passion_bonus_pct
+      value: 10
+    raw_effect_text: 強気に変更 / パラメータ+10 / 熱意増加+10%
+  - level: +
+    cost:
+      full_power: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 18
+    - kind: passion_bonus_pct
+      value: 10
+    raw_effect_text: 強気に変更 / パラメータ+18 / 熱意増加+10%
+  - level: ++
+    cost:
+      full_power: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 23
+    - kind: passion_bonus_pct
+      value: 10
+    raw_effect_text: 強気に変更 / パラメータ+23 / 熱意増加+10%
+  - level: +++
+    cost:
+      full_power: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 27
+    - kind: passion_bonus_pct
+      value: 10
+    raw_effect_text: 強気に変更 / パラメータ+27 / 熱意増加+10
+  _needs_review: false
+- id: com_A_SR_M_0001
+  name: 潜在能力
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '2'
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 6
+    effects:
+    - kind: genki
+      value: 10
+    - kind: full_power
+      value: 3
+    raw_effect_text: 元気+10 / 全力値+3 / 手札を選択し、保留に移動
+    unparsed_lines:
+    - 手札を選択し、保留に移動
+  - level: +
+    cost:
+      hp: 6
+    effects:
+    - kind: genki
+      value: 15
+    - kind: full_power
+      value: 4
+    raw_effect_text: 元気+15 / 全力値+4 / 手札を選択し、保留に移動
+    unparsed_lines:
+    - 手札を選択し、保留に移動
+  - level: ++
+    cost:
+      hp: 5
+    effects:
+    - kind: genki
+      value: 15
+    - kind: full_power
+      value: 4
+    raw_effect_text: 元気+15 / 全力値+4 / 手札を選択し、保留に移動
+    unparsed_lines:
+    - 手札を選択し、保留に移動
+  - level: +++
+    cost:
+      hp: 4
+    effects:
+    - kind: genki
+      value: 15
+    - kind: full_power
+      value: 4
+    raw_effect_text: 元気+15 / 全力値+4 / 手札を選択し、保留に移動
+    unparsed_lines:
+    - 手札を選択し、保留に移動
+  _needs_review: false
+- id: com_A_SR_M_0002
+  name: カウントダウン
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '2'
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 8
+    raw_effect_text: 温存に変更 / 元気+8
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 13
+    raw_effect_text: 温存に変更 / 元気+13
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 13
+    raw_effect_text: 温存に変更 / 元気+13
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 13
+    raw_effect_text: 温存に変更 / 元気+13
+  _needs_review: false
+- id: com_A_SR_M_0003
+  name: モチベ
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv17で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: full_power
+      value: 2
+    raw_effect_text: 全力値+2 / 以降、全力効果のスキルカード使用時、全力値+1
+    unparsed_lines:
+    - '[delayed/conditional] 以降、全力効果のスキルカード使用時、全力値+1'
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: full_power
+      value: 2
+    raw_effect_text: 全力値+2 / 以降、全力効果のスキルカード使用時、全力値+1
+    unparsed_lines:
+    - '[delayed/conditional] 以降、全力効果のスキルカード使用時、全力値+1'
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: full_power
+      value: 3
+    raw_effect_text: 全力値+3 / 以降、全力効果のスキルカード使用時、全力値+1
+    unparsed_lines:
+    - '[delayed/conditional] 以降、全力効果のスキルカード使用時、全力値+1'
+  - level: +++
+    cost:
+      hp: 2
+    effects:
+    - kind: full_power
+      value: 4
+    raw_effect_text: 全力値+4 / 以降、全力効果のスキルカード使用時、全力値+1
+    unparsed_lines:
+    - '[delayed/conditional] 以降、全力効果のスキルカード使用時、全力値+1'
+  _needs_review: false
+- id: com_A_SR_M_0004
+  name: プライド
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    PLv20で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 5
+    - kind: full_power
+      value: 2
+    raw_effect_text: レッスン開始時手札に入る / 温存に変更 / 元気+5 / 全力値+2
+    unparsed_lines:
+    - レッスン開始時手札に入る
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 8
+    - kind: full_power
+      value: 3
+    raw_effect_text: レッスン開始時手札に入る / 温存に変更 / 元気+8 / 全力値+3
+    unparsed_lines:
+    - レッスン開始時手札に入る
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 8
+    - kind: full_power
+      value: 3
+    raw_effect_text: レッスン開始時手札に入る / 温存に変更 / 元気+8 / 全力値+3
+    unparsed_lines:
+    - レッスン開始時手札に入る
+  - level: +++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 8
+    - kind: full_power
+      value: 3
+    raw_effect_text: レッスン開始時手札に入る / 温存に変更 / 元気+8 / 全力値+3
+    unparsed_lines:
+    - レッスン開始時手札に入る
+  _needs_review: false
+- id: com_A_SR_M_0005
+  name: 盛り上げ上手
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv22で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: param_boost
+      value: 13
+    raw_effect_text: アクティブスキルカードのパラメータ値増加+13・コスト値増加+1 / 次のターン、スキルカードを引く
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、スキルカードを引く'
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: param_boost
+      value: 16
+    raw_effect_text: アクティブスキルカードのパラメータ値増加+16・コスト値増加+1 / 次のターン、スキルカードを2枚引く
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、スキルカードを2枚引く'
+  - level: ++
+    cost:
+      hp: 4
+    effects:
+    - kind: param_boost
+      value: 18
+    raw_effect_text: アクティブスキルカードのパラメータ値増加+18・コスト値増加+1 / 次のターン、スキルカードを2枚引く
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、スキルカードを2枚引く'
+  - level: +++
+    cost:
+      hp: 4
+    effects:
+    - kind: param_boost
+      value: 20
+    raw_effect_text: アクティブスキルカードのパラメータ値増加+20・コスト値増加+1 / 次のターン、スキルカードを2枚引く
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、スキルカードを2枚引く'
+  _needs_review: false
+- id: com_A_SR_M_0006
+  name: インフルエンサー
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv24で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 6
+    effects:
+    - kind: extra_use
+      value: 1
+    raw_effect_text: メンタルスキルカードの元気値増加+5・コスト値増加+1 / スキルカード使用数追加+1 / スキルカードを引く
+    unparsed_lines:
+    - メンタルスキルカードの元気値増加+5・コスト値増加+1
+    - スキルカードを引く
+  - level: +
+    cost:
+      hp: 5
+    effects:
+    - kind: extra_use
+      value: 1
+    raw_effect_text: メンタルスキルカードの元気値増加+6・コスト値増加+1 / スキルカード使用数追加+1 / スキルカードを引く
+    unparsed_lines:
+    - メンタルスキルカードの元気値増加+6・コスト値増加+1
+    - スキルカードを引く
+  - level: ++
+    cost:
+      hp: 5
+    effects:
+    - kind: extra_use
+      value: 1
+    raw_effect_text: メンタルスキルカードの元気値増加+7・コスト値増加+1 / スキルカード使用数追加+1 / スキルカードを引く
+    unparsed_lines:
+    - メンタルスキルカードの元気値増加+7・コスト値増加+1
+    - スキルカードを引く
+  - level: +++
+    cost:
+      hp: 5
+    effects:
+    - kind: extra_use
+      value: 1
+    raw_effect_text: メンタルスキルカードの元気値増加+8・コスト値増加+1 / スキルカード使用数追加+1 / スキルカードを引く
+    unparsed_lines:
+    - メンタルスキルカードの元気値増加+8・コスト値増加+1
+    - スキルカードを引く
+  _needs_review: false
+- id: com_A_SR_M_0007
+  name: 忍耐力
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    PLv28で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: genki
+      value: 5
+    - kind: full_power
+      value: 2
+    raw_effect_text: 温存に変更 / 元気+5 / 全力値+2
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    - kind: genki
+      value: 5
+    - kind: full_power
+      value: 3
+    raw_effect_text: 温存2段階目に変更 / 元気+5 / 全力値+3
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    - kind: genki
+      value: 5
+    - kind: full_power
+      value: 3
+    raw_effect_text: 温存2段階目に変更 / 元気+5 / 全力値+3
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 2
+    - kind: genki
+      value: 5
+    - kind: full_power
+      value: 3
+    raw_effect_text: 温存2段階目に変更 / 元気+5 / 全力値+3
+  _needs_review: false
+- id: com_A_SR_M_0008
+  name: 切磋琢磨
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '1'
+  remark: '重複不可
+
+    PLv32で解放'
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 1
+    effects:
+    - kind: full_power
+      value: 2
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 全力値+2 / 山札か捨札にあるスキルカードを選択し、保留に移動 / スキルカード使用数追加+1 / 指針固定1ターン
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを選択し、保留に移動
+    - 指針固定1ターン
+  - level: +
+    cost: {}
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 全力値+3 / 山札か捨札にあるスキルカードを選択し、保留に移動 / スキルカード使用数追加+1 / 指針固定1ターン
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを選択し、保留に移動
+    - 指針固定1ターン
+  - level: ++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 3
+    - kind: full_power
+      value: 3
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 元気+3 / 全力値+3 / 山札か捨札にあるスキルカードを選択し、保留に移動 / スキルカード使用数追加+1 / 指針固定1ターン
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを選択し、保留に移動
+    - 指針固定1ターン
+  - level: +++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 5
+    - kind: full_power
+      value: 3
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 元気+5 / 全力値+3 / 山札か捨札にあるスキルカードを選択し、保留に移動 / スキルカード使用数追加+1 / 指針固定1ターン
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを選択し、保留に移動
+    - 指針固定1ターン
+  _needs_review: false
+- id: com_A_SR_M_0011
+  name: フルスロットル
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv53で解放
+
+    せーのっ！
+
+    との
+
+    スイッチ'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: passion_bonus_pct
+      value: 100
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 3
+    raw_effect_text: 温存に変更 / 熱意増加+100%（3ターン） / スキルカード使用数追加+1 / スキルカードを3枚引く / 眠気を山札のランダムな位置に生成
+    unparsed_lines:
+    - 眠気を山札のランダムな位置に生成
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: passion_bonus_pct
+      value: 150
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 3
+    raw_effect_text: 温存に変更 / 熱意増加+150%（3ターン） / スキルカード使用数追加+1 / スキルカードを3枚引く / 眠気を山札のランダムな位置に生成
+    unparsed_lines:
+    - 眠気を山札のランダムな位置に生成
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: passion_bonus_pct
+      value: 150
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 3
+    raw_effect_text: 温存に変更 / 熱意増加+150%（3ターン） / スキルカード使用数追加+1 / スキルカードを3枚引く / 眠気を山札のランダムな位置に生成
+    unparsed_lines:
+    - 眠気を山札のランダムな位置に生成
+  - level: +++
+    cost: {}
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: passion_bonus_pct
+      value: 150
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 3
+    raw_effect_text: 温存に変更 / 熱意増加+150%（3ターン） / スキルカード使用数追加+1 / スキルカードを3枚引く / 眠気を山札のランダムな位置に生成
+    unparsed_lines:
+    - 眠気を山札のランダムな位置に生成
+  _needs_review: false
+- id: com_A_SR_M_0012
+  name: リスキーチャンス
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv54で解放
+
+    汗と成長
+
+    との
+
+    スイッチ'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: 全力値+3 / 全力値増加量増加+50%（3ターン） / スキルカード使用数追加+1 / スキルカードを2枚引く / 眠気を山札のランダムな位置に生成
+    unparsed_lines:
+    - 全力値増加量増加+50%（3ターン）
+    - 眠気を山札のランダムな位置に生成
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: 全力値+3 / 全力値増加量増加+50%（4ターン） / スキルカード使用数追加+1 / スキルカードを2枚引く / 眠気を山札のランダムな位置に生成
+    unparsed_lines:
+    - 全力値増加量増加+50%（4ターン）
+    - 眠気を山札のランダムな位置に生成
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: 全力値+3 / 全力値増加量増加+50%（4ターン） / スキルカード使用数追加+1 / スキルカードを2枚引く / 眠気を山札のランダムな位置に生成
+    unparsed_lines:
+    - 全力値増加量増加+50%（4ターン）
+    - 眠気を山札のランダムな位置に生成
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: 全力値+3 / 全力値増加量増加+50%（4ターン） / スキルカード使用数追加+1 / スキルカードを2枚引く / 眠気を山札のランダムな位置に生成
+    unparsed_lines:
+    - 全力値増加量増加+50%（4ターン）
+    - 眠気を山札のランダムな位置に生成
+  _needs_review: false
+- id: com_A_SR_M_0013
+  name: タフネス
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv63で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: param_boost
+      value: 14
+    raw_effect_text: 温存になった回数が2回以上の場合、使用可 / 温存に変更 / スキルカード使用数追加+1 / アクティブスキルカードのパラメータ値増加+14・コスト値増加+1
+    unparsed_lines:
+    - 温存になった回数が2回以上の場合、使用可
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: param_boost
+      value: 18
+    raw_effect_text: 温存になった回数が2回以上の場合、使用可 / 温存に変更 / スキルカード使用数追加+1 / アクティブスキルカードのパラメータ値増加+18・コスト値増加+1
+    unparsed_lines:
+    - 温存になった回数が2回以上の場合、使用可
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: param_boost
+      value: 18
+    raw_effect_text: 温存になった回数が2回以上の場合、使用可 / 温存に変更 / スキルカード使用数追加+1 / アクティブスキルカードのパラメータ値増加+18・コスト値増加+1
+    unparsed_lines:
+    - 温存になった回数が2回以上の場合、使用可
+  - level: +++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: param_boost
+      value: 18
+    raw_effect_text: 温存になった回数が2回以上の場合、使用可 / 温存に変更 / スキルカード使用数追加+1 / アクティブスキルカードのパラメータ値増加+18・コスト値増加+1
+    unparsed_lines:
+    - 温存になった回数が2回以上の場合、使用可
+  _needs_review: false
+- id: com_A_SR_M_0014
+  name: 達成感
+  category: anomaly
+  rarity: SR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv68で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 6
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    raw_effect_text: 温存に変更 / スキルカード使用数追加+1 / 以降3回まで、全力を解除後、非全力状態の場合、温存に変更
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    raw_effect_text: 温存に変更 / スキルカード使用数追加+1 / 以降3回まで、全力を解除後、非全力状態の場合、温存に変更
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    raw_effect_text: 温存に変更 / スキルカード使用数追加+1 / 以降3回まで、全力を解除後、非全力状態の場合、温存に変更
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    raw_effect_text: 温存に変更 / スキルカード使用数追加+1 / 以降3回まで、全力を解除後、非全力状態の場合、温存に変更
+  _needs_review: false
+- id: com_A_SSR_A_0001
+  name: 翔び立て！
+  category: anomaly
+  rarity: SSR
+  type: active
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv11で解放
+
+    羽ばたけ！
+
+    との
+
+    スイッチ'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 6
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: param
+      value: 10
+    raw_effect_text: 全力値+3 / パラメータ+10（累積全力値の100%分、パラメータ上昇量増加） / 成長：全力になった時、自身のパラメータ値増加+20（1回まで）
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 20
+    unparsed_lines:
+    - '[delayed/conditional] 成長：全力になった時、自身のパラメータ値増加+20（1回まで）'
+  - level: +
+    cost:
+      hp: 5
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 10
+    raw_effect_text: 全力値+4 / パラメータ+10（累積全力値の150%分、パラメータ上昇量増加） / 成長：全力になった時、自身のパラメータ値増加+30（1回まで）
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 30
+    unparsed_lines:
+    - '[delayed/conditional] 成長：全力になった時、自身のパラメータ値増加+30（1回まで）'
+  - level: ++
+    cost:
+      hp: 4
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 10
+    raw_effect_text: 全力値+4 / パラメータ+10（累積全力値の150%分、パラメータ上昇量増加） / 成長：全力になった時、自身のパラメータ値増加+30（1回まで）
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 30
+    unparsed_lines:
+    - '[delayed/conditional] 成長：全力になった時、自身のパラメータ値増加+30（1回まで）'
+  - level: +++
+    cost:
+      hp: 3
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 10
+    raw_effect_text: 全力値+4 / パラメータ+10（累積全力値の150%分、パラメータ上昇量増加） / 成長：全力になった時、自身のパラメータ値増加+30（1回まで）
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 30
+    unparsed_lines:
+    - '[delayed/conditional] 成長：全力になった時、自身のパラメータ値増加+30（1回まで）'
+  _needs_review: false
+- id: com_A_SSR_A_0002
+  name: 総合芸術
+  category: anomaly
+  rarity: SSR
+  type: active
+  custom_limit: '1'
+  remark: '重複不可
+
+    PLv12で解放
+
+    エンターテイナー
+
+    との
+
+    スイッチ'
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 7
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 7
+    raw_effect_text: いずれかの指針の場合、使用可 / 強気に変更 / パラメータ+7 / 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+15（4回まで）
+    growth:
+      max_count: 4
+      per_fire:
+        paramValueIncrease: 15
+    unparsed_lines:
+    - いずれかの指針の場合、使用可
+    - '[delayed/conditional] 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+15（4回まで）'
+  - level: +
+    cost:
+      hp: 7
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 10
+    raw_effect_text: いずれかの指針の場合、使用可 / 強気に変更 / パラメータ+10 / 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+20（4回まで）
+    growth:
+      max_count: 4
+      per_fire:
+        paramValueIncrease: 20
+    unparsed_lines:
+    - いずれかの指針の場合、使用可
+    - '[delayed/conditional] 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+20（4回まで）'
+  - level: ++
+    cost:
+      hp: 6
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 10
+    raw_effect_text: いずれかの指針の場合、使用可 / 強気に変更 / パラメータ+10 / 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+20（4回まで）
+    growth:
+      max_count: 4
+      per_fire:
+        paramValueIncrease: 20
+    unparsed_lines:
+    - いずれかの指針の場合、使用可
+    - '[delayed/conditional] 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+20（4回まで）'
+  - level: +++
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 10
+    raw_effect_text: いずれかの指針の場合、使用可 / 強気に変更 / パラメータ+10 / 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+20（4回まで）
+    growth:
+      max_count: 4
+      per_fire:
+        paramValueIncrease: 20
+    unparsed_lines:
+    - いずれかの指針の場合、使用可
+    - '[delayed/conditional] 成長：直接効果で指針を変更するたび、自身のパラメータ値増加+20（4回まで）'
+  _needs_review: false
+- id: com_A_SSR_A_0003
+  name: 心・技・体
+  category: anomaly
+  rarity: SSR
+  type: active
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv30で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 8
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 7
+    - kind: full_power
+      value: 3
+    raw_effect_text: 強気2段階目に変更 / パラメータ+7 / 全力値+3 / 消費体力減少2ターン
+    unparsed_lines:
+    - 消費体力減少2ターン
+  - level: +
+    cost:
+      hp: 8
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 16
+    - kind: full_power
+      value: 4
+    raw_effect_text: 強気2段階目に変更 / パラメータ+16 / 全力値+4 / 消費体力減少4ターン
+    unparsed_lines:
+    - 消費体力減少4ターン
+  - level: ++
+    cost:
+      hp: 7
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 16
+    - kind: full_power
+      value: 4
+    raw_effect_text: 強気2段階目に変更 / パラメータ+16 / 全力値+4 / 消費体力減少4ターン
+    unparsed_lines:
+    - 消費体力減少4ターン
+  - level: +++
+    cost:
+      hp: 6
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 16
+    - kind: full_power
+      value: 4
+    raw_effect_text: 強気2段階目に変更 / パラメータ+16 / 全力値+4 / 消費体力減少4ターン
+    unparsed_lines:
+    - 消費体力減少4ターン
+  _needs_review: false
+- id: com_A_SSR_A_0004
+  name: 輝け！
+  category: anomaly
+  rarity: SSR
+  type: active
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv41で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 7
+    effects:
+    - kind: full_power
+      value: 3
+    - kind: param
+      value: 20
+      note:
+        count: 2
+    raw_effect_text: 全力値+3 / 次のターン、温存に変更 / 全力の場合、パラメータ+20（2回）
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、温存に変更'
+  - level: +
+    cost:
+      hp: 7
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 25
+      note:
+        count: 2
+    raw_effect_text: 全力値+4 / 次のターン、温存2段階目に変更 / 全力の場合、パラメータ+25（2回）
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、温存2段階目に変更'
+  - level: ++
+    cost:
+      hp: 6
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 25
+      note:
+        count: 2
+    raw_effect_text: 全力値+4 / 次のターン、温存2段階目に変更 / 全力の場合、パラメータ+25（2回）
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、温存2段階目に変更'
+  - level: +++
+    cost:
+      hp: 5
+    effects:
+    - kind: full_power
+      value: 4
+    - kind: param
+      value: 25
+      note:
+        count: 2
+    raw_effect_text: 全力値+4 / 次のターン、温存2段階目に変更 / 全力の場合、パラメータ+25（2回）
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、温存2段階目に変更'
+  _needs_review: false
+- id: com_A_SSR_A_0005
+  name: クライマックス
+  category: anomaly
+  rarity: SSR
+  type: active
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv43で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 10
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 14
+      note:
+        count: 2
+    raw_effect_text: 強気に変更 / パラメータ+14（2回） / 次のターン、温存に変更
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、温存に変更'
+  - level: +
+    cost:
+      hp: 10
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 19
+      note:
+        count: 2
+    raw_effect_text: 強気2段階目に変更 / パラメータ+19（2回） / 次のターン、温存2段階目に変更
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、温存2段階目に変更'
+  - level: ++
+    cost:
+      hp: 9
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 19
+      note:
+        count: 2
+    raw_effect_text: 強気2段階目に変更 / パラメータ+19（2回） / 次のターン、温存2段階目に変更
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、温存2段階目に変更'
+  - level: +++
+    cost:
+      hp: 8
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 2
+    - kind: param
+      value: 19
+      note:
+        count: 2
+    raw_effect_text: 強気2段階目に変更 / パラメータ+19（2回） / 次のターン、温存2段階目に変更
+    unparsed_lines:
+    - '[delayed/conditional] 次のターン、温存2段階目に変更'
+  _needs_review: false
+- id: com_A_SSR_A_0006
+  name: 全身全霊
+  category: anomaly
+  rarity: SSR
+  type: active
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv50で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 8
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 3
+    raw_effect_text: 強気に変更 / 次に使用したスキルカードの消費体力を0にする (2回) / スキルカード使用数追加+1 / スキルカードを3枚引く
+    unparsed_lines:
+    - '[delayed/conditional] 次に使用したスキルカードの消費体力を0にする (2回)'
+  - level: +
+    cost:
+      hp: 8
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: extra_use
+      value: 2
+    - kind: draw
+      value: 3
+    raw_effect_text: 強気に変更 / 次に使用したスキルカードの消費体力を0にする (2回) / スキルカード使用数追加+2 / スキルカードを3枚引く
+    unparsed_lines:
+    - '[delayed/conditional] 次に使用したスキルカードの消費体力を0にする (2回)'
+  - level: ++
+    cost:
+      hp: 7
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: extra_use
+      value: 2
+    - kind: draw
+      value: 3
+    raw_effect_text: 強気に変更 / 次に使用したスキルカードの消費体力を0にする (2回) / スキルカード使用数追加+2 / スキルカードを3枚引く
+    unparsed_lines:
+    - '[delayed/conditional] 次に使用したスキルカードの消費体力を0にする (2回)'
+  - level: +++
+    cost:
+      hp: 6
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: extra_use
+      value: 2
+    - kind: draw
+      value: 3
+    raw_effect_text: 強気に変更 / 次に使用したスキルカードの消費体力を0にする (2回) / スキルカード使用数追加+2 / スキルカードを3枚引く
+    unparsed_lines:
+    - '[delayed/conditional] 次に使用したスキルカードの消費体力を0にする (2回)'
+  _needs_review: false
+- id: com_A_SSR_A_0007
+  name: エンターテイナー
+  category: anomaly
+  rarity: SSR
+  type: active
+  custom_limit: '1'
+  remark: '重複不可
+
+    PLv77で解放
+
+    総合芸術
+
+    との
+
+    スイッチ'
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 10
+    raw_effect_text: 強気に変更 / パラメータ+10 / [成長] 直接効果で指針を3回変更するたび、自身のパラメータ上昇回数増加+1・体力消費コスト値減少-1（2回まで）
+    growth:
+      max_count: 2
+      per_fire:
+        paramRepeatBonus: 1
+        hpCostReduction: 1
+    unparsed_lines:
+    - '[delayed/conditional] [成長] 直接効果で指針を3回変更するたび、自身のパラメータ上昇回数増加+1・体力消費コスト値減少-1（2回まで）'
+  - level: +
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 12
+    raw_effect_text: 強気に変更 / パラメータ+12 / [成長] 直接効果で指針を3回変更するたび、自身のパラメータ上昇回数増加+1・体力消費コスト値減少-1（3回まで）
+    growth:
+      max_count: 3
+      per_fire:
+        paramRepeatBonus: 1
+        hpCostReduction: 1
+    unparsed_lines:
+    - '[delayed/conditional] [成長] 直接効果で指針を3回変更するたび、自身のパラメータ上昇回数増加+1・体力消費コスト値減少-1（3回まで）'
+  - level: ++
+    cost:
+      hp: 5
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 15
+    raw_effect_text: 強気に変更 / パラメータ+15 / [成長] 直接効果で指針を3回変更するたび、自身のパラメータ上昇回数増加+1・体力消費コスト値減少-1（3回まで）
+    growth:
+      max_count: 3
+      per_fire:
+        paramRepeatBonus: 1
+        hpCostReduction: 1
+    unparsed_lines:
+    - '[delayed/conditional] [成長] 直接効果で指針を3回変更するたび、自身のパラメータ上昇回数増加+1・体力消費コスト値減少-1（3回まで）'
+  - level: +++
+    cost:
+      hp: 4
+    effects:
+    - kind: state_change
+      note:
+        to: 強気
+        level: 1
+    - kind: param
+      value: 15
+    raw_effect_text: 強気に変更 / パラメータ+15 / [成長] 直接効果で指針を3回変更するたび、自身のパラメータ上昇回数増加+1・体力消費コスト値減少-1（3回まで）
+    growth:
+      max_count: 3
+      per_fire:
+        paramRepeatBonus: 1
+        hpCostReduction: 1
+    unparsed_lines:
+    - '[delayed/conditional] [成長] 直接効果で指針を3回変更するたび、自身のパラメータ上昇回数増加+1・体力消費コスト値減少-1（3回まで）'
+  _needs_review: false
+- id: com_A_SSR_A_0008
+  name: 羽ばたけ！
+  category: anomaly
+  rarity: SSR
+  type: active
+  custom_limit: '1'
+  remark: '重複不可
+
+    PLv80で解放
+
+    翔び立て！
+
+    との
+
+    スイッチ'
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      full_power: 4
+    effects:
+    - kind: param
+      value: 5
+      note:
+        count: 4
+    raw_effect_text: このレッスン中の累計全力値が5以上の場合、使用可 / 自身を保留に移動 / 次のターン、全力値+4 / 全力の場合、パラメータ+5（4回） / [成長] 自身使用後、全力の場合、自身のパラメータ値増加+4
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 4
+    unparsed_lines:
+    - このレッスン中の累計全力値が5以上の場合、使用可
+    - 自身を保留に移動
+    - '[delayed/conditional] 次のターン、全力値+4'
+    - '[delayed/conditional] [成長] 自身使用後、全力の場合、自身のパラメータ値増加+4'
+  - level: +
+    cost:
+      full_power: 4
+    effects:
+    - kind: param
+      value: 5
+      note:
+        count: 5
+    raw_effect_text: このレッスン中の累計全力値が5以上の場合、使用可 / 自身を保留に移動 / 次のターン、全力値+4 / 全力の場合、パラメータ+5（5回） / [成長] 自身使用後、全力の場合、自身のパラメータ値増加+6
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 6
+    unparsed_lines:
+    - このレッスン中の累計全力値が5以上の場合、使用可
+    - 自身を保留に移動
+    - '[delayed/conditional] 次のターン、全力値+4'
+    - '[delayed/conditional] [成長] 自身使用後、全力の場合、自身のパラメータ値増加+6'
+  - level: ++
+    cost:
+      full_power: 4
+    effects:
+    - kind: param
+      value: 8
+      note:
+        count: 5
+    raw_effect_text: このレッスン中の累計全力値が5以上の場合、使用可 / 自身を保留に移動 / 次のターン、全力値+4 / 全力の場合、パラメータ+8（5回） / [成長] 自身使用後、全力の場合、自身のパラメータ値増加+6
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 6
+    unparsed_lines:
+    - このレッスン中の累計全力値が5以上の場合、使用可
+    - 自身を保留に移動
+    - '[delayed/conditional] 次のターン、全力値+4'
+    - '[delayed/conditional] [成長] 自身使用後、全力の場合、自身のパラメータ値増加+6'
+  - level: +++
+    cost:
+      full_power: 4
+    effects:
+    - kind: param
+      value: 12
+      note:
+        count: 5
+    raw_effect_text: このレッスン中の累計全力値が5以上の場合、使用可 / 自身を保留に移動 / 次のターン、全力値+4 / 全力の場合、パラメータ+12（5回） / [成長] 自身使用後、全力の場合、自身のパラメータ値増加+6
+    growth:
+      max_count: 1
+      per_fire:
+        paramValueIncrease: 6
+    unparsed_lines:
+    - このレッスン中の累計全力値が5以上の場合、使用可
+    - 自身を保留に移動
+    - '[delayed/conditional] 次のターン、全力値+4'
+    - '[delayed/conditional] [成長] 自身使用後、全力の場合、自身のパラメータ値増加+6'
+  _needs_review: false
+- id: com_A_SSR_M_0001
+  name: アイドルになります
+  category: anomaly
+  rarity: SSR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv25で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      full_power: 3
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: hand_param_boost
+      value: 1
+    raw_effect_text: スキルカード使用数追加+1 / 手札のパラメータ上昇回数増加+1
+  - level: +
+    cost:
+      full_power: 3
+    effects:
+    - kind: genki
+      value: 4
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: hand_param_boost
+      value: 1
+    raw_effect_text: 元気+4 / 温存に変更 / スキルカード使用数追加+1 / 手札のパラメータ上昇回数増加+1
+  - level: ++
+    cost:
+      full_power: 3
+    effects:
+    - kind: genki
+      value: 9
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: hand_param_boost
+      value: 1
+    raw_effect_text: 元気+9 / 温存に変更 / スキルカード使用数追加+1 / 手札のパラメータ上昇回数増加+1
+  - level: +++
+    cost:
+      full_power: 3
+    effects:
+    - kind: genki
+      value: 14
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: extra_use
+      value: 1
+    - kind: hand_param_boost
+      value: 1
+    raw_effect_text: 元気+14 / 温存に変更 / スキルカード使用数追加+1 / 手札のパラメータ上昇回数増加+1
+  _needs_review: false
+- id: com_A_SSR_M_0002
+  name: 一心不乱
+  category: anomaly
+  rarity: SSR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv38で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: param_boost
+      value: 37
+    raw_effect_text: 強気の場合、使用可 / 温存に変更 / 強気効果のスキルカードのパラメータ値増加+37・コスト値増加+7
+    unparsed_lines:
+    - 強気の場合、使用可
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: param_boost
+      value: 45
+    raw_effect_text: 強気の場合、使用可 / 温存に変更 / 強気効果のスキルカードのパラメータ値増加+45・コスト値増加+7
+    unparsed_lines:
+    - 強気の場合、使用可
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: param_boost
+      value: 48
+    raw_effect_text: 強気の場合、使用可 / 温存に変更 / 強気効果のスキルカードのパラメータ値増加+48・コスト値増加+7
+    unparsed_lines:
+    - 強気の場合、使用可
+  - level: +++
+    cost:
+      hp: 3
+    effects:
+    - kind: state_change
+      note:
+        to: 温存
+        level: 1
+    - kind: param_boost
+      value: 52
+    raw_effect_text: 強気の場合、使用可 / 温存に変更 / 強気効果のスキルカードのパラメータ値増加+52・コスト値増加+7
+    unparsed_lines:
+    - 強気の場合、使用可
+  _needs_review: false
+- id: com_A_SSR_M_0003
+  name: 頂点へ
+  category: anomaly
+  rarity: SSR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv45で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 9
+    effects: []
+    raw_effect_text: 以降、ターン開始時、いずれかの指針の場合、すべてのスキルカードのパラメータ値増加+4
+    unparsed_lines:
+    - '[delayed/conditional] 以降、ターン開始時、いずれかの指針の場合、すべてのスキルカードのパラメータ値増加+4'
+  - level: +
+    cost:
+      hp: 9
+    effects:
+    - kind: param_boost
+      value: 6
+    raw_effect_text: すべてのスキルカードのパラメータ値増加+6 / 以降、ターン開始時、いずれかの指針の場合、すべてのスキルカードのパラメータ値増加+4
+    unparsed_lines:
+    - '[delayed/conditional] 以降、ターン開始時、いずれかの指針の場合、すべてのスキルカードのパラメータ値増加+4'
+  - level: ++
+    cost:
+      hp: 8
+    effects:
+    - kind: param_boost
+      value: 6
+    raw_effect_text: すべてのスキルカードのパラメータ値増加+6 / 以降、ターン開始時、いずれかの指針の場合、すべてのスキルカードのパラメータ値増加+4
+    unparsed_lines:
+    - '[delayed/conditional] 以降、ターン開始時、いずれかの指針の場合、すべてのスキルカードのパラメータ値増加+4'
+  - level: +++
+    cost:
+      hp: 7
+    effects:
+    - kind: param_boost
+      value: 6
+    raw_effect_text: すべてのスキルカードのパラメータ値増加+6 / 以降、ターン開始時、いずれかの指針の場合、すべてのスキルカードのパラメータ値増加+4
+    unparsed_lines:
+    - '[delayed/conditional] 以降、ターン開始時、いずれかの指針の場合、すべてのスキルカードのパラメータ値増加+4'
+  _needs_review: false
+- id: com_A_SSR_M_0004
+  name: 覚悟
+  category: anomaly
+  rarity: SSR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv54で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: genki
+      value: 8
+    - kind: full_power
+      value: 5
+    raw_effect_text: 元気+8 / 全力値+5 / 山札か捨札にあるスキルカードを選択し、保留に移動
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを選択し、保留に移動
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: genki
+      value: 8
+    - kind: full_power
+      value: 7
+    raw_effect_text: 元気+8 / 全力値+7 / 山札か捨札にあるスキルカードを選択し、保留に移動
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを選択し、保留に移動
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: genki
+      value: 8
+    - kind: full_power
+      value: 7
+    raw_effect_text: 元気+8 / 全力値+7 / 山札か捨札にあるスキルカードを選択し、保留に移動
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを選択し、保留に移動
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 11
+    - kind: full_power
+      value: 7
+    raw_effect_text: 元気+11 / 全力値+7 / 山札か捨札にあるスキルカードを選択し、保留に移動
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを選択し、保留に移動
+  _needs_review: false
+- id: com_A_SSR_M_0005
+  name: 本領発揮
+  category: anomaly
+  rarity: SSR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv75で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      full_power: 2
+    effects: []
+    raw_effect_text: 山札か捨札にあるスキルカードを2枚まで選択し、保留に移動 / 保留にあるスキルカードのパラメータ上昇回数増加+1・コスト値増加+6 / 次のターン、全力値+5
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを2枚まで選択し、保留に移動
+    - 保留にあるスキルカードのパラメータ上昇回数増加+1・コスト値増加+6
+    - '[delayed/conditional] 次のターン、全力値+5'
+  - level: +
+    cost:
+      full_power: 2
+    effects: []
+    raw_effect_text: 山札か捨札にあるスキルカードを2枚まで選択し、保留に移動 / 保留にあるスキルカードのパラメータ上昇回数増加+1・コスト値増加+2 / 次のターン、全力値+5
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを2枚まで選択し、保留に移動
+    - 保留にあるスキルカードのパラメータ上昇回数増加+1・コスト値増加+2
+    - '[delayed/conditional] 次のターン、全力値+5'
+  - level: ++
+    cost:
+      full_power: 2
+    effects: []
+    raw_effect_text: 山札か捨札にあるスキルカードを2枚まで選択し、保留に移動 / 保留にあるスキルカードのパラメータ上昇回数増加+1・コスト値増加+2 / 次のターン、全力値+6
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを2枚まで選択し、保留に移動
+    - 保留にあるスキルカードのパラメータ上昇回数増加+1・コスト値増加+2
+    - '[delayed/conditional] 次のターン、全力値+6'
+  - level: +++
+    cost:
+      full_power: 2
+    effects: []
+    raw_effect_text: 山札か捨札にあるスキルカードを2枚まで選択し、保留に移動 / 保留にあるスキルカードのパラメータ上昇回数増加+1・コスト値増加+2 / 次のターン、全力値+7
+    unparsed_lines:
+    - 山札か捨札にあるスキルカードを2枚まで選択し、保留に移動
+    - 保留にあるスキルカードのパラメータ上昇回数増加+1・コスト値増加+2
+    - '[delayed/conditional] 次のターン、全力値+7'
+  _needs_review: true
+- id: com_A_Leg_A_0001
+  name: スーパーノヴァ
+  category: anomaly
+  rarity: Leg
+  type: active
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 1
+    effects:
+    - kind: param
+      value: 1
+    raw_effect_text: 強気2段階目の場合、使用可 / パラメータ+1 / 成長：直接効果で指針を2回変更するたび、自身のパラメータ値増加+20・パラメータ上昇回数増加+1・コスト値増加+1 (12回まで) / [移動時効果]手札に移動したとき、スキルカードを引く
+    growth:
+      max_count: 12
+      per_fire:
+        paramRepeatBonus: 1
+        paramValueIncrease: 20
+    unparsed_lines:
+    - 強気2段階目の場合、使用可
+    - '[delayed/conditional] 成長：直接効果で指針を2回変更するたび、自身のパラメータ値増加+20・パラメータ上昇回数増加+1・コスト値増加+1 (12回まで)'
+    - '[移動時効果]手札に移動したとき、スキルカードを引く'
+  _needs_review: false
+- id: com_A_Leg_A_0002
+  name: グランドフィナーレ
+  category: anomaly
+  rarity: Leg
+  type: active
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost: {}
+    effects:
+    - kind: param
+      value: 50
+    raw_effect_text: パラメータ+50（累積全力値の350%分、パラメータ上昇量増加） / 最大体力の100%分体力消費 / [移動時効果]保留に移動した時、保留にあるスキルカードのパラメータ上昇回数増加+1
+    unparsed_lines:
+    - 最大体力の100%分体力消費
+    - '[移動時効果]保留に移動した時、保留にあるスキルカードのパラメータ上昇回数増加+1'
+  _needs_review: false
+- id: com_A_Leg_M_0001
+  name: エキスパート
+  category: anomaly
+  rarity: Leg
+  type: mental
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: param_boost
+      value: 5
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 指針を変更した回数が4回以上の場合、使用可 / 保留にあるスキルカードのパラメータ値増加+5 / 保留にあるスキルカードをコストを消費せず使用 / スキルカード使用数追加+1 / 次のターン、温存に変更 / [移動時効果] 手札に移動したとき山札か捨札にあるスキルカードを選択し、保留に移動
+    unparsed_lines:
+    - 指針を変更した回数が4回以上の場合、使用可
+    - 保留にあるスキルカードをコストを消費せず使用
+    - '[delayed/conditional] 次のターン、温存に変更'
+    - '[移動時効果] 手札に移動したとき山札か捨札にあるスキルカードを選択し、保留に移動'
+  _needs_review: false
+- id: com_A_Leg_M_0002
+  name: レジェンドスター
+  category: anomaly
+  rarity: Leg
+  type: mental
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 7
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    - kind: extra_turn
+      value: 1
+    - kind: extra_turn
+      value: 1
+    - kind: extra_turn
+      value: 1
+    raw_effect_text: スキルカード使用数追加+1 / スキルカードを2枚引く / 温存になった回数が2回以上の場合、ターン追加+1 / 強気になった回数が2回以上の場合、ターン追加+1 / 全力になった回数が2回以上の場合、ターン追加+1 / 以降3回まで、残り3ターン以内の場合、全力になった時、パラメータ上昇量増加150%（1ターン）
+    unparsed_lines:
+    - 以降3回まで、残り3ターン以内の場合、全力になった時、パラメータ上昇量増加150%（1ターン）
+  _needs_review: false
+- id: com_A_Leg_M_0003
+  name: トップクオリティ
+  category: anomaly
+  rarity: Leg
+  type: mental
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 6
+    effects:
+    - kind: extra_use
+      value: 1
+    raw_effect_text: 温存の場合、使用可 / スキルカード使用数追加+1 / 以降、アクティブスキルカード使用後、強気の場合、熱意追加+3 / 以降、メンタルスキルカード使用後、温存の場合、熱意増加+50%
+    unparsed_lines:
+    - 温存の場合、使用可
+    - '[delayed/conditional] 以降、アクティブスキルカード使用後、強気の場合、熱意追加+3'
+    - '[delayed/conditional] 以降、メンタルスキルカード使用後、温存の場合、熱意増加+50%'
+  _needs_review: false

@@ -1,0 +1,16 @@
+cards:
+- id: com_T_N_0001
+  name: 眠気
+  category: trouble
+  rarity: N
+  type: trouble
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost: {}
+    effects:
+    - kind: no_effect
+    raw_effect_text: 効果なし
+  _needs_review: false

@@ -1,0 +1,591 @@
+cards:
+- id: com_F_N_A_0001
+  name: アピールの基本
+  category: free
+  rarity: N
+  type: active
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: param
+      value: 9
+    raw_effect_text: パラメータ+9
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 14
+    raw_effect_text: パラメータ+14
+  - level: ++
+    cost:
+      hp: 2
+    effects:
+    - kind: param
+      value: 14
+    raw_effect_text: パラメータ+14
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: param
+      value: 15
+    raw_effect_text: パラメータ+15
+  _needs_review: false
+- id: com_F_N_A_0002
+  name: ポーズの基本
+  category: free
+  rarity: N
+  type: active
+  custom_limit: 対象外
+  remark: ''
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 2
+    - kind: genki
+      value: 2
+    raw_effect_text: パラメータ+2 元気+2
+  - level: +
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 6
+    - kind: genki
+      value: 4
+    raw_effect_text: パラメータ+6 元気+4
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 8
+    - kind: genki
+      value: 5
+    raw_effect_text: パラメータ+8 元気+5
+  - level: +++
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 10
+    - kind: genki
+      value: 6
+    raw_effect_text: パラメータ+10 元気+6
+  _needs_review: false
+- id: com_F_N_M_0001
+  name: 表現の基本
+  category: free
+  rarity: N
+  type: mental
+  custom_limit: 対象外
+  remark: レッスン中1回
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost: {}
+    effects:
+    - kind: genki
+      value: 4
+    raw_effect_text: 元気+4
+  - level: +
+    cost: {}
+    effects:
+    - kind: genki
+      value: 7
+    raw_effect_text: 元気+7
+  - level: ++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 8
+    raw_effect_text: 元気+8
+  - level: +++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 10
+    raw_effect_text: 元気+10
+  _needs_review: false
+- id: com_F_R_M_0001
+  name: 気合十分！
+  category: free
+  rarity: R
+  type: mental
+  custom_limit: '3'
+  remark: PLv16で解放
+  usage: reusable
+  variants:
+  - level: 無印
+    cost: {}
+    effects:
+    - kind: genki
+      value: 2
+    raw_effect_text: 元気+2 / 消費体力減少2ターン
+    unparsed_lines:
+    - 消費体力減少2ターン
+  - level: +
+    cost: {}
+    effects:
+    - kind: genki
+      value: 2
+    raw_effect_text: 元気+2 / 消費体力減少3ターン
+    unparsed_lines:
+    - 消費体力減少3ターン
+  - level: ++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 4
+    raw_effect_text: 元気+4 / 消費体力減少3ターン
+    unparsed_lines:
+    - 消費体力減少3ターン
+  - level: +++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 6
+    raw_effect_text: 元気+6 / 消費体力減少3ターン
+    unparsed_lines:
+    - 消費体力減少3ターン
+  _needs_review: false
+- id: com_F_R_M_0002
+  name: ファーストステップ
+  category: free
+  rarity: R
+  type: mental
+  custom_limit: '3'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv16で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost: {}
+    effects:
+    - kind: genki
+      value: 3
+    raw_effect_text: 元気+3 / 体力が50%以上の場合、消費体力削減1
+    unparsed_lines:
+    - 体力が50%以上の場合、消費体力削減1
+  - level: +
+    cost: {}
+    effects:
+    - kind: genki
+      value: 6
+    raw_effect_text: 元気+6 / 体力が50%以上の場合、消費体力削減1
+    unparsed_lines:
+    - 体力が50%以上の場合、消費体力削減1
+  - level: ++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 8
+    raw_effect_text: 元気+8 / 体力が50%以上の場合、消費体力削減1
+    unparsed_lines:
+    - 体力が50%以上の場合、消費体力削減1
+  - level: +++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 9
+    raw_effect_text: 元気+9 / 体力が50%以上の場合、消費体力削減1
+    unparsed_lines:
+    - 体力が50%以上の場合、消費体力削減1
+  _needs_review: false
+- id: com_F_SR_A_0001
+  name: 前途洋々
+  category: free
+  rarity: SR
+  type: active
+  custom_limit: '2'
+  remark: PLv3で解放
+  usage: reusable
+  variants:
+  - level: 無印
+    cost:
+      hp: 4
+    effects:
+    - kind: param
+      value: 8
+    - kind: genki
+      value: 7
+    raw_effect_text: パラメータ+8 元気+7
+  - level: +
+    cost:
+      hp: 4
+    effects:
+    - kind: param
+      value: 12
+    - kind: genki
+      value: 10
+    raw_effect_text: パラメータ+12 元気+10
+  - level: ++
+    cost:
+      hp: 3
+    effects:
+    - kind: param
+      value: 13
+    - kind: genki
+      value: 10
+    raw_effect_text: パラメータ+13 / 元気+10
+  - level: +++
+    cost:
+      hp: 2
+    effects:
+    - kind: param
+      value: 13
+    - kind: genki
+      value: 10
+    raw_effect_text: パラメータ+13 / 元気+10
+  _needs_review: false
+- id: com_F_SR_M_0001
+  name: アイドル宣言
+  category: free
+  rarity: SR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv23で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 1
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: スキルカード使用数追加+1 / スキルカードを2枚引く
+  - level: +
+    cost: {}
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: スキルカード使用数追加+1 / スキルカードを2枚引く / 消費体力減少1ターン
+    unparsed_lines:
+    - 消費体力減少1ターン
+  - level: ++
+    cost: {}
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: スキルカード使用数追加+1 / スキルカードを2枚引く / 消費体力減少2ターン
+    unparsed_lines:
+    - 消費体力減少2ターン
+  - level: +++
+    cost: {}
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: スキルカード使用数追加+1 / スキルカードを2枚引く / 消費体力減少3ターン
+    unparsed_lines:
+    - 消費体力減少3ターン
+  _needs_review: false
+- id: com_F_SR_M_0002
+  name: ハイテンション
+  category: free
+  rarity: SR
+  type: mental
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    PLv23で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost: {}
+    effects:
+    - kind: genki
+      value: 11
+    raw_effect_text: 元気+11 / 元気増加無効2ターン / 消費体力減少3ターン
+    unparsed_lines:
+    - 元気増加無効2ターン
+    - 消費体力減少3ターン
+  - level: +
+    cost: {}
+    effects:
+    - kind: genki
+      value: 13
+    raw_effect_text: 元気+13 / 元気増加無効2ターン / 消費体力減少4ターン
+    unparsed_lines:
+    - 元気増加無効2ターン
+    - 消費体力減少4ターン
+  - level: ++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 15
+    raw_effect_text: 元気+15 / 元気増加無効2ターン / 消費体力減少4ターン
+    unparsed_lines:
+    - 元気増加無効2ターン
+    - 消費体力減少4ターン
+  - level: +++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 17
+    raw_effect_text: 元気+17 / 元気増加無効2ターン / 消費体力減少4ターン
+    unparsed_lines:
+    - 元気増加無効2ターン
+    - 消費体力減少4ターン
+  _needs_review: false
+- id: com_F_SSR_M_0001
+  name: テレビ出演
+  category: free
+  rarity: SSR
+  type: mental
+  custom_limit: '2'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv5で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 3
+    raw_effect_text: 元気+3 / 消費体力減少4ターン
+    unparsed_lines:
+    - 消費体力減少4ターン
+  - level: +
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 5
+    raw_effect_text: 元気+5 / 消費体力減少5ターン
+    unparsed_lines:
+    - 消費体力減少5ターン
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 8
+    raw_effect_text: 元気+8 / 消費体力減少5ターン
+    unparsed_lines:
+    - 消費体力減少5ターン
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 11
+    raw_effect_text: 元気+11 / 消費体力減少5ターン
+    unparsed_lines:
+    - 消費体力減少5ターン
+  _needs_review: false
+- id: com_F_SSR_M_0002
+  name: 叶えたい夢
+  category: free
+  rarity: SSR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv10で解放'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 8
+    raw_effect_text: 元気+8 / 消費体力削減1
+    unparsed_lines:
+    - 消費体力削減1
+  - level: +
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 9
+    raw_effect_text: 元気+9 / 消費体力削減2
+    unparsed_lines:
+    - 消費体力削減2
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 12
+    raw_effect_text: 元気+12 / 消費体力削減2
+    unparsed_lines:
+    - 消費体力削減2
+  - level: +++
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 15
+    raw_effect_text: 元気+15 / 消費体力削減2
+    unparsed_lines:
+    - 消費体力削減2
+  _needs_review: false
+- id: com_F_SSR_M_0003
+  name: アイドル魂
+  category: free
+  rarity: SSR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv35で解放
+
+    24/9/20に
+
+    スキルカード使用数追加+1
+
+    が追加された'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 2
+    effects:
+    - kind: genki
+      value: 6
+    - kind: extra_use
+      value: 1
+    raw_effect_text: レッスン開始時手札に入る / 元気+6 / 低下状態無効(1回) / スキルカード使用数追加+1
+    unparsed_lines:
+    - レッスン開始時手札に入る
+    - 低下状態無効(1回)
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: genki
+      value: 6
+    - kind: extra_use
+      value: 1
+    raw_effect_text: レッスン開始時手札に入る / 元気+6 / 低下状態無効(1回) / 次のターン、手札をすべてレッスン中強化 / スキルカード使用数追加+1
+    unparsed_lines:
+    - レッスン開始時手札に入る
+    - 低下状態無効(1回)
+    - '[delayed/conditional] 次のターン、手札をすべてレッスン中強化'
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: genki
+      value: 6
+    - kind: extra_use
+      value: 1
+    raw_effect_text: レッスン開始時手札に入る / 元気+6 / 低下状態無効(1回) / 次のターン、手札をすべてレッスン中強化 / スキルカード使用数追加+1
+    unparsed_lines:
+    - レッスン開始時手札に入る
+    - 低下状態無効(1回)
+    - '[delayed/conditional] 次のターン、手札をすべてレッスン中強化'
+  - level: +++
+    cost: {}
+    effects:
+    - kind: genki
+      value: 6
+    - kind: extra_use
+      value: 1
+    raw_effect_text: レッスン開始時手札に入る / 元気+6 / 低下状態無効(1回) / 次のターン、手札をすべてレッスン中強化 / スキルカード使用数追加+1
+    unparsed_lines:
+    - レッスン開始時手札に入る
+    - 低下状態無効(1回)
+    - '[delayed/conditional] 次のターン、手札をすべてレッスン中強化'
+  _needs_review: false
+- id: com_F_SSR_M_0004
+  name: 仕切り直し
+  category: free
+  rarity: SSR
+  type: mental
+  custom_limit: '1'
+  remark: 'レッスン中1回
+
+    重複不可
+
+    PLv40で解放
+
+    24/9/20に
+
+    スキルカードを2枚引く
+
+    が追加された'
+  usage: once_per_lesson
+  variants:
+  - level: 無印
+    cost:
+      hp: 5
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: 手札をすべて入れ替える / 消費体力減少4ターン / スキルカード使用数追加+1 / スキルカードを2枚引く
+    unparsed_lines:
+    - 手札をすべて入れ替える
+    - 消費体力減少4ターン
+  - level: +
+    cost:
+      hp: 2
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: 手札をすべて入れ替える / 消費体力減少4ターン / スキルカード使用数追加+1 / スキルカードを2枚引く
+    unparsed_lines:
+    - 手札をすべて入れ替える
+    - 消費体力減少4ターン
+  - level: ++
+    cost:
+      hp: 1
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: 手札をすべて入れ替える / 消費体力減少4ターン / スキルカード使用数追加+1 / スキルカードを2枚引く
+    unparsed_lines:
+    - 手札をすべて入れ替える
+    - 消費体力減少4ターン
+  - level: +++
+    cost: {}
+    effects:
+    - kind: extra_use
+      value: 1
+    - kind: draw
+      value: 2
+    raw_effect_text: 手札をすべて入れ替える / 消費体力減少4ターン / スキルカード使用数追加+1 / スキルカードを2枚引く
+    unparsed_lines:
+    - 手札をすべて入れ替える
+    - 消費体力減少4ターン
+  _needs_review: false
