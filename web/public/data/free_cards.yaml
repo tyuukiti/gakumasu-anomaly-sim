@@ -545,47 +545,47 @@ cards:
     cost:
       hp: 5
     effects:
+    - kind: discard_all
     - kind: extra_use
       value: 1
     - kind: draw
       value: 2
     raw_effect_text: 手札をすべて入れ替える / 消費体力減少4ターン / スキルカード使用数追加+1 / スキルカードを2枚引く
     unparsed_lines:
-    - 手札をすべて入れ替える
     - 消費体力減少4ターン
   - level: +
     cost:
       hp: 2
     effects:
+    - kind: discard_all
     - kind: extra_use
       value: 1
     - kind: draw
       value: 2
     raw_effect_text: 手札をすべて入れ替える / 消費体力減少4ターン / スキルカード使用数追加+1 / スキルカードを2枚引く
     unparsed_lines:
-    - 手札をすべて入れ替える
     - 消費体力減少4ターン
   - level: ++
     cost:
       hp: 1
     effects:
+    - kind: discard_all
     - kind: extra_use
       value: 1
     - kind: draw
       value: 2
     raw_effect_text: 手札をすべて入れ替える / 消費体力減少4ターン / スキルカード使用数追加+1 / スキルカードを2枚引く
     unparsed_lines:
-    - 手札をすべて入れ替える
     - 消費体力減少4ターン
   - level: +++
     cost: {}
     effects:
+    - kind: discard_all
     - kind: extra_use
       value: 1
     - kind: draw
       value: 2
     raw_effect_text: 手札をすべて入れ替える / 消費体力減少4ターン / スキルカード使用数追加+1 / スキルカードを2枚引く
     unparsed_lines:
-    - 手札をすべて入れ替える
     - 消費体力減少4ターン
   _needs_review: false

@@ -9568,44 +9568,44 @@ cards:
     effects:
     - kind: good_condition
       value: 1
+    - kind: discard_all
     - kind: extra_use
       value: 1
     raw_effect_text: 好調1ターン / 手札をすべて入れ替える / スキルカード使用数追加+1
-    unparsed_lines:
-    - 手札をすべて入れ替える
+    unparsed_lines: []
   - level: +
     cost:
       hp: 3
     effects:
     - kind: good_condition
       value: 3
+    - kind: discard_all
     - kind: extra_use
       value: 1
     raw_effect_text: 好調3ターン / 手札をすべて入れ替える / スキルカード使用数追加+1
-    unparsed_lines:
-    - 手札をすべて入れ替える
+    unparsed_lines: []
   - level: ++
     cost:
       hp: 3
     effects:
     - kind: good_condition
       value: 4
+    - kind: discard_all
     - kind: extra_use
       value: 1
     raw_effect_text: 好調4ターン / 手札をすべて入れ替える / スキルカード使用数追加+1
-    unparsed_lines:
-    - 手札をすべて入れ替える
+    unparsed_lines: []
   - level: +++
     cost:
       hp: 3
     effects:
     - kind: good_condition
       value: 5
+    - kind: discard_all
     - kind: extra_use
       value: 1
     raw_effect_text: 好調5ターン / 手札をすべて入れ替える / スキルカード使用数追加+1
-    unparsed_lines:
-    - 手札をすべて入れ替える
+    unparsed_lines: []
   _needs_review: false
   owner: もう一度、最初から！
 - id: SP_SSR_0020

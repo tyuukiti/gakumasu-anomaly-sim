@@ -30,6 +30,9 @@ _HP_DAMAGE_RE = re.compile(r"体力\s*-\s*(\d+)")
 _HP_DAMAGE_KW_RE = re.compile(r"体力消費\s*(\d+)")
 _DRAW_RE = re.compile(r"(?:スキル)?カードを?\s*(\d+)\s*枚?\s*引く")
 _DISCARD_ALL_RE = re.compile(r"手札を全て?捨てる")
+# 「手札をすべて入れ替える」「手札を全て入れ替える」も実ゲームでは手札を捨てて引き直すので
+# discard_all 相当 (draw 枚数はカード側に別途記載される)
+_HAND_REPLACE_RE = re.compile(r"手札を(?:すべて|全て)入れ替える")
 _DISCARD_N_RE = re.compile(r"手札[をから]?\s*(\d+)\s*枚?\s*捨てる")
 _FULL_POWER_RE = re.compile(r"全力値\s*\+\s*(\d+)")
 _PASSION_ADD_RE = re.compile(r"熱意追加\s*\+\s*(\d+)")
@@ -222,6 +225,11 @@ def parse_effect_text(effect_lines: list[str]) -> tuple[list[ParsedEffect], list
         # 手札全捨て (値なし)
         if _DISCARD_ALL_RE.search(line):
             effects.append(ParsedEffect(kind="discard_all", raw="手札を全て捨てる"))
+            matched = True
+
+        # 手札入れ替え = 実装上は手札全捨て + draw (draw 枚数はカード側に別途記載)
+        if _HAND_REPLACE_RE.search(line):
+            effects.append(ParsedEffect(kind="discard_all", raw=line.strip()))
             matched = True
 
         # 状態変更 ("強気に変更", "強気2段階目に変更", "温存に変更" ...)

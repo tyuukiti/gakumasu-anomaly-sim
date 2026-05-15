@@ -28,7 +28,9 @@ export const AGGRESSIVE_LV2_PARAM_MULT = 2.5
 export const PROBABILITY_EPSILON = 0.001
 /** 葉ノードの最大数 (これを超えたら強制打ち切り) */
 export const MAX_LEAVES = 200_000
-/** 1探索パスの最大プレイ手数の上限 */
-export const MAX_DEPTH_HARD = 8
+/** 1探索パスの最大プレイ手数の上限
+ *  温存↔強気ループ + 仕切り直しのドロー追加 + アイドル使用数+1 等を組み合わせると
+ *  ターン内 10 手以上のムーブが成立する局面があるため、ある程度余裕を持たせる。 */
+export const MAX_DEPTH_HARD = 12
 /** 結果として返すパターン数: 期待スコア上位 (N-1) + 最安定 1 */
 export const RESULT_PATTERN_COUNT = 3
