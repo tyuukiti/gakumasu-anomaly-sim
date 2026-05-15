@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+tmp/
+**/debug_*.html
+**/debug_*.txt
+
+# Claude Code 用ファイル (ローカル開発専用、リポジトリには含めない)
+.claude/
+CLAUDE.md
+
+# リリースノート / ブログ草稿 (ローカル管理、リポジトリには含めない)
+release_v*.md
+blog_v*.md
+
+# Generated data is committed (Data/AnomalyCards/*.yaml) — DO NOT ignore

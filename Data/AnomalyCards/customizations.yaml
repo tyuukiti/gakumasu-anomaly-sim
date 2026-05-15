@@ -1,0 +1,2513 @@
+customizations:
+  com_F_R_M_0001:
+    custom_limit: 3
+    options:
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 6 (P40)'
+      - '2段階: 元気 + 10 (P40)'
+      - '3段階: 元気 + 19 (P70)'
+      max: 3
+    - id: 消費体力減少+
+      label: 消費体力減少+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 4 ターン (P40)'
+      - '2段階: 消費体力減少 5 ターン (P40)'
+      - '3段階: 消費体力減少 7 ターン (P70)'
+      max: 3
+    - id: 開始時手札に入る
+      label: 開始時手札に入る
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: レッスン開始時手札に入る (P70)'
+  com_F_R_M_0002:
+    custom_limit: 3
+    options:
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 10 (P40)'
+      - '2段階: 元気 + 14 (P40)'
+      - '3段階: 元気 + 23 (P70)'
+      max: 3
+    - id: 開始時手札に入る
+      label: 開始時手札に入る
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: レッスン開始時手札に入る (P70)'
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+  com_F_SR_A_0001:
+    custom_limit: 2
+    options:
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 14 (P40)'
+      - '2段階: 元気 + 23 (P70)'
+      max: 2
+    - id: パラメータ上昇回数+
+      label: パラメータ上昇回数+
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: パラメータ+12 (2回) (P100)'
+      max: 1
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 15 (P40)'
+      - '2段階: パラメータ+ 23 (P70)'
+      max: 2
+  com_F_SR_M_0001:
+    custom_limit: 1
+    options:
+    - id: 消費体力減少+
+      label: 消費体力減少+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 3 ターン (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 ＋4 (P70)'
+  com_F_SR_M_0002:
+    custom_limit: 2
+    options:
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 17 (P40)'
+      - '2段階: 元気 + 26 (P70)'
+      max: 2
+    - id: 消費体力減少+
+      label: 消費体力減少+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 5 ターン (P40)'
+      - '2段階: 消費体力減少 7 ターン (P70)'
+      max: 2
+  com_F_SSR_M_0001:
+    custom_limit: 2
+    options:
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+  com_F_SSR_M_0002:
+    custom_limit: 1
+    options:
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 〔2回目の元気を追加〕 (P70)'
+    - id: 元気+
+      label: 元気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 13 (P70)'
+  com_F_SSR_M_0003:
+    custom_limit: 1
+    options:
+    - id: 元気+
+      label: 元気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 15 (P70)'
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 0 (P20)'
+  com_F_SSR_M_0004:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 0 (P20)'
+    - id: 消費体力減少+
+      label: 消費体力減少+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 6 ターン (P70)'
+  com_A_R_A_0001:
+    custom_limit: 3
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 21 (P40)'
+      - '2段階: パラメータ+ 27 (P40)'
+      - '3段階: パラメータ+ 45 (P70)'
+      max: 3
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 4 (P40)'
+      - '2段階: 全力値 + 5 (P40)'
+      - '3段階: 全力値 + 7 (P70)'
+      max: 3
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +3 (P40)'
+      - '2段階: 保留 にあるスキルカードの パラメータ値増加 + 6 (P40)'
+      - '3段階: 保留 にあるスキルカードの パラメータ値増加 + 11 (P70)'
+      max: 3
+  com_A_R_A_0002:
+    custom_limit: 3
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 4 (P20)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 24 (P40)'
+      - '2段階: パラメータ+ 30 (P40)'
+      - '3段階: パラメータ+ 48 (P70)'
+      max: 3
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: すべてのスキルカードの パラメータ値増加 +1 (P40)'
+      - '2段階: すべてのスキルカードの パラメータ値増加 + 2 (P40)'
+      - '3段階: すべてのスキルカードの パラメータ値増加 + 5 (P70)'
+      max: 3
+  com_A_R_A_0003:
+    custom_limit: 3
+    options:
+    - id: 全力値追加
+      label: 全力値追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 +2 (P70)'
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: すべてのスキルカードの パラメータ値増加 +1 (P40)'
+      - '2段階: すべてのスキルカードの パラメータ値増加 + 2 (P40)'
+      - '3段階: すべてのスキルカードの パラメータ値増加 + 5 (P70)'
+      max: 3
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 29 (P40)'
+      - '2段階: パラメータ+ 35 (P40)'
+      - '3段階: パラメータ+ 53 (P70)'
+      max: 3
+  com_A_R_A_0004:
+    custom_limit: 3
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 16 (P40)'
+      - '2段階: パラメータ+ 22 (P40)'
+      - '3段階: パラメータ+ 40 (P70)'
+      max: 3
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +3 (P40)'
+      - '2段階: 保留 にあるスキルカードの パラメータ値増加 + 6 (P40)'
+      - '3段階: 保留 にあるスキルカードの パラメータ値増加 + 11 (P70)'
+      max: 3
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 の場合、 全力値 + 5 (P40)'
+      - '2段階: 強気 の場合、 全力値 + 6 (P40)'
+      - '3段階: 強気 の場合、 全力値 + 8 (P70)'
+      max: 3
+  com_A_R_A_0005:
+    custom_limit: 3
+    options:
+    - id: パラメータ上昇回数+
+      label: パラメータ上昇回数+
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 全力 の場合、パラメータ+35 (2回) (P100)'
+      max: 1
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 手札の パラメータ値増加 +3 (P40)'
+      - '2段階: 手札の パラメータ値増加 + 6 (P40)'
+      - '3段階: 手札の パラメータ値増加 + 11 (P70)'
+      max: 3
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 0 (P20)'
+  com_A_R_A_0006:
+    custom_limit: 3
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 10 (2回) (P40)'
+      - '2段階: パラメータ+ 13 (2回) (P40)'
+      - '3段階: パラメータ+ 22 (2回) (P70)'
+      max: 3
+    - id: 全力値追加
+      label: 全力値追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 +2 (P70)'
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 2 (P20)'
+  com_A_R_A_0007:
+    custom_limit: 3
+    options:
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 次のターン、 温存 に変更 (P70)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ + 19 (P40)'
+      - '2段階: パラメータ + 25 (P40)'
+      - '3段階: パラメータ + 43 (P70)'
+      max: 3
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_R_A_0008:
+    custom_limit: 3
+    options:
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 次のターン、 温存 に変更 (P70)'
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 4 (P40)'
+      - '2段階: 全力値 + 5 (P40)'
+      - '3段階: 全力値 + 7 (P70)'
+      max: 3
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_R_A_0009:
+    custom_limit: 3
+    options:
+    - id: 強気+
+      label: 強気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 2段階目 に変更 (P70)'
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 4 (P40)'
+      - '2段階: 全力値 + 5 (P40)'
+      - '3段階: 全力値 + 7 (P70)'
+      max: 3
+    - id: 保留追加
+      label: 保留追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 山札にあるスキルカードを選択し、 保留 に移動 (P70)'
+  com_A_R_M_0001:
+    custom_limit: 3
+    options:
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +3 (P40)'
+      - '2段階: 保留 にあるスキルカードの パラメータ値増加 + 6 (P40)'
+      - '3段階: 保留 にあるスキルカードの パラメータ値増加 + 11 (P70)'
+      max: 3
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 14 (P40)'
+      - '2段階: 元気 + 18 (P40)'
+      - '3段階: 元気 + 27 (P70)'
+      max: 3
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 0 (P20)'
+  com_A_R_M_0002:
+    custom_limit: 3
+    options:
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 10 (P40)'
+      - '2段階: 元気 + 14 (P40)'
+      - '3段階: 元気 + 23 (P70)'
+      max: 3
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 4 (P40)'
+      - '2段階: 全力値 + 5 (P40)'
+      - '3段階: 全力値 + 7 (P70)'
+      max: 3
+    - id: 保留追加
+      label: 保留追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 山札にあるスキルカードを選択し、 保留 に移動 (P70)'
+  com_A_R_M_0003:
+    custom_limit: 3
+    options:
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 の場合、 全力値 + 5 (P40)'
+      - '2段階: 強気 の場合、 全力値 + 6 (P40)'
+      - '3段階: 強気 の場合、 全力値 + 8 (P70)'
+      max: 3
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +3 (P40)'
+      - '2段階: 保留 にあるスキルカードの パラメータ値増加 + 6 (P40)'
+      - '3段階: 保留 にあるスキルカードの パラメータ値増加 + 11 (P70)'
+      max: 3
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 8 (P40)'
+      - '2段階: 元気 + 12 (P40)'
+      - '3段階: 元気 + 21 (P70)'
+      max: 3
+  com_A_R_M_0004:
+    custom_limit: 3
+    options:
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 6 (P40)'
+      - '2段階: 全力値 + 7 (P40)'
+      - '3段階: 全力値 + 9 (P70)'
+      max: 3
+    - id: 保留追加
+      label: 保留追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 山札にあるスキルカードを選択し、 保留 に移動 (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_R_M_0005:
+    custom_limit: 3
+    options:
+    - id: 全力値コスト値-
+      label: 全力値コスト値-
+      type: toggle
+      apply:
+        removeFullPowerCost: true
+      effect_texts:
+      - '1段階: 全力値 消費 0 (P40)'
+    - id: レッスン中1回の制限削除
+      label: レッスン中1回の制限削除
+      type: toggle
+      apply:
+        noExile: true
+      effect_texts:
+      - '1段階: レッスン中1回 (P40)'
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: すべてのスキルカードの パラメータ値増加 +1 (P40)'
+      - '2段階: すべてのスキルカードの パラメータ値増加 + 2 (P40)'
+      - '3段階: すべてのスキルカードの パラメータ値増加 + 5 (P70)'
+      max: 3
+  com_A_SR_A_0001:
+    custom_limit: 2
+    options:
+    - id: 強気+
+      label: 強気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 2段階目 に変更 (P70)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 28 (P40)'
+      - '2段階: パラメータ+ 44 (P70)'
+      max: 2
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: すべてのスキルカードの パラメータ値増加 +1 (P40)'
+      - '2段階: すべてのスキルカードの パラメータ値増加 + 4 (P70)'
+      max: 2
+  com_A_SR_A_0002:
+    custom_limit: 2
+    options:
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +3 (P40)'
+      - '2段階: 保留 にあるスキルカードの パラメータ値増加 + 8 (P70)'
+      max: 2
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 2 (P20)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 18 (P40)'
+      - '2段階: パラメータ+ 34 (P70)'
+      max: 2
+  com_A_SR_A_0003:
+    custom_limit: 2
+    options:
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 次のターン、 温存 に変更 (P70)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 13 （2回） (P40)'
+      - '2段階: パラメータ+ 21 （2回） (P70)'
+      max: 2
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: すべてのスキルカードの パラメータ値増加 +1 (P40)'
+      - '2段階: すべてのスキルカードの パラメータ値増加 + 4 (P70)'
+      max: 2
+  com_A_SR_A_0004:
+    custom_limit: 2
+    options:
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 次のターン、 温存 に変更 (P70)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 53 (P40)'
+      - '2段階: パラメータ+ 69 (P70)'
+      max: 2
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 手札の パラメータ値増加 +3 (P40)'
+      - '2段階: 手札の パラメータ値増加 + 8 (P70)'
+      max: 2
+  com_A_SR_A_0005:
+    custom_limit: 2
+    options:
+    - id: 強気+
+      label: 強気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 2段階目 に変更 (P70)'
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 手札の パラメータ値増加 +3 (P40)'
+      - '2段階: 手札の パラメータ値増加 + 8 (P70)'
+      max: 2
+    - id: 開始時手札に入る
+      label: 開始時手札に入る
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: レッスン開始時手札に入る (P70)'
+  com_A_SR_A_0006:
+    custom_limit: 2
+    options:
+    - id: 強気+
+      label: 強気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 2段階目 に変更 (P70)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 20 (P40)'
+      - '2段階: パラメータ+ 36 (P70)'
+      max: 2
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 強気 になった時、 このスキルカードの パラメータ値増加 +2 (P40)'
+      - '2段階: 強気 になった時、 このスキルカードの パラメータ値増加 + 5 (P70)'
+      max: 2
+  com_A_SR_A_0007:
+    custom_limit: 2
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 14 (P40)'
+      - '2段階: パラメータ+ 30 (P70)'
+      max: 2
+    - id: 消費体力減少+
+      label: 消費体力減少+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 3 ターン (P40)'
+      - '2段階: 消費体力減少 5 ターン (P70)'
+      max: 2
+    - id: 強気+
+      label: 強気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 2段階目 に変更 (P70)'
+  com_A_SR_A_0008:
+    custom_limit: 1
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 4
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+5 (上限 4 回)'
+    - id: 全力値コスト値-
+      label: 全力値コスト値-
+      type: toggle
+      apply:
+        removeFullPowerCost: true
+      effect_texts:
+      - '1段階: 全力値 消費 1 (P40)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_SR_A_0009:
+    custom_limit: 2
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 1
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+5 (上限 1 回)'
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 3 (P20)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 9 （2回） (P40)'
+      - '2段階: パラメータ+ 17 （2回） (P70)'
+      max: 2
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_SR_A_0010:
+    custom_limit: 2
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 34 (P40)'
+      - '2段階: パラメータ+ 50 (P70)'
+      max: 2
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 手札の パラメータ値増加 +3 (P40)'
+      - '2段階: 手札の パラメータ値増加 + 8 (P70)'
+      max: 2
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 3 (P20)'
+  com_A_SR_A_0011:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 2 (P20)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_SR_A_0012:
+    custom_limit: 2
+    options:
+    - id: 全力値コスト値-
+      label: 全力値コスト値-
+      type: toggle
+      apply:
+        removeFullPowerCost: true
+      effect_texts:
+      - '1段階: 全力値 消費 1 (P40)'
+    - id: 強気+
+      label: 強気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 2段階目 に変更 (P70)'
+    - id: レッスン中1回の制限削除
+      label: レッスン中1回の制限削除
+      type: toggle
+      apply:
+        noExile: true
+      effect_texts:
+      - '1段階: レッスン中1回 (P40)'
+  com_A_SR_M_0001:
+    custom_limit: 2
+    options:
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 19 (P40)'
+      - '2段階: 元気 + 28 (P70)'
+      max: 2
+    - id: レッスン中1回の制限削除
+      label: レッスン中1回の制限削除
+      type: toggle
+      apply:
+        noExile: true
+      effect_texts:
+      - '1段階: レッスン中1回 (P40)'
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +3 (P40)'
+      - '2段階: 保留 にあるスキルカードの パラメータ値増加 + 8 (P70)'
+      max: 2
+  com_A_SR_M_0002:
+    custom_limit: 2
+    options:
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 17 (P40)'
+      - '2段階: 元気 + 26 (P70)'
+      max: 2
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +3 (P40)'
+      - '2段階: 保留 にあるスキルカードの パラメータ値増加 + 8 (P70)'
+      max: 2
+    - id: 温存+
+      label: 温存+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 温存 2段階目 に変更 (P70)'
+  com_A_SR_M_0003:
+    custom_limit: 2
+    options:
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 3 (P40)'
+      - '2段階: 全力値 + 5 (P70)'
+      max: 2
+    - id: 保留追加
+      label: 保留追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 山札にあるスキルカードを選択し、 保留 に移動 (P70)'
+    - id: 開始時手札に入る
+      label: 開始時手札に入る
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: レッスン開始時手札に入る (P70)'
+  com_A_SR_M_0004:
+    custom_limit: 2
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 2 (P20)'
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: すべてのスキルカードの パラメータ値増加 +1 (P40)'
+      - '2段階: すべてのスキルカードの パラメータ値増加 + 4 (P70)'
+      max: 2
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 4 (P40)'
+      - '2段階: 全力値 + 6 (P70)'
+      max: 2
+  com_A_SR_M_0005:
+    custom_limit: 2
+    options:
+    - id: 強気追加
+      label: 強気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 に変更 (P70)'
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 次のターン、 温存 に変更 (P70)'
+    - id: 保留追加
+      label: 保留追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 山札にあるスキルカードを選択し、保留に移動 (P70)'
+  com_A_SR_M_0006:
+    custom_limit: 1
+    options:
+    - id: 強気追加
+      label: 強気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 に変更 (P70)'
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 次のターン、 温存 に変更 (P70)'
+  com_A_SR_M_0007:
+    custom_limit: 2
+    options:
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +3 (P40)'
+      - '2段階: 保留 にあるスキルカードの パラメータ値増加 + 8 (P70)'
+      max: 2
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 9 (P40)'
+      - '2段階: 元気 + 18 (P70)'
+      max: 2
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 0 (P20)'
+  com_A_SR_M_0008:
+    custom_limit: 1
+    options:
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +5 (P70)'
+      max: 1
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 手札の パラメータ値増加 +5 (P70)'
+      max: 1
+  com_A_SR_M_0011:
+    custom_limit: 1
+    options:
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 次のターン、 温存 に変更 (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_SR_M_0012:
+    custom_limit: 1
+    options:
+    - id: 保留追加
+      label: 保留追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 山札にあるスキルカードを選択し、保留に移動 (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_SR_M_0013:
+    custom_limit: 1
+    options:
+    - id: 温存+
+      label: 温存+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 温存 2段階目 に変更 (P70)'
+    - id: 条件変更
+      label: 条件変更
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 温存 になった回数が 1 回以上の場合、使用可 (P70)'
+  com_A_SR_M_0014:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 1 (P20)'
+    - id: 温存+
+      label: 温存+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 温存 2段階目 に変更 (P70)'
+  com_A_SSR_A_0001:
+    custom_limit: 1
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 1
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+20 (上限 1 回)'
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 次のターン、 温存 に変更 (P70)'
+    - id: パラメータ上昇回数+
+      label: パラメータ上昇回数+
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: パラメータ+10 （このレッスン中に増加した 全力値 の150%分、パラメータ効果量増加） (2回) (P100)'
+      max: 1
+  com_A_SSR_A_0002:
+    custom_limit: 1
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 4
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+15 (上限 4 回)'
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 5 (P20)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 22 (P70)'
+  com_A_SSR_A_0003:
+    custom_limit: 1
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 28 (P70)'
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 6 (P20)'
+  com_A_SSR_A_0004:
+    custom_limit: 1
+    options:
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 全力 になった時、 このスキルカードの パラメータ値増加 +3 (P70)'
+      max: 1
+    - id: レッスン中1回の制限削除
+      label: レッスン中1回の制限削除
+      type: toggle
+      apply:
+        noExile: true
+      effect_texts:
+      - '1段階: レッスン中1回 (P40)'
+  com_A_SSR_A_0005:
+    custom_limit: 1
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 25 (2回) (P70)'
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 8 (P20)'
+  com_A_SSR_A_0006:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 6 (P20)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_SSR_A_0007:
+    custom_limit: 1
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 3
+      apply:
+        paramRepeatBonusPer: 1
+        hpCostReductionPer: 1
+      effect_texts:
+      - '1スタックごと: パラメータ上昇回数+1・体力消費-1 (上限 3 回)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 24 (P70)'
+  com_A_SSR_A_0008:
+    custom_limit: 1
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 1
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+4 (上限 1 回)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+    - id: 全力値コスト値-
+      label: 全力値コスト値-
+      type: toggle
+      apply:
+        removeFullPowerCost: true
+      effect_texts:
+      - '1段階: 全力値 消費 3 (P40)'
+  com_A_SSR_M_0001:
+    custom_limit: 1
+    options:
+    - id: 全力値コスト値-
+      label: 全力値コスト値-
+      type: toggle
+      apply:
+        removeFullPowerCost: true
+      effect_texts:
+      - '1段階: 全力値 消費 2 (P40)'
+    - id: 元気+
+      label: 元気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 13 (P70)'
+  com_A_SSR_M_0002:
+    custom_limit: 1
+    options:
+    - id: 温存+
+      label: 温存+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 温存 2段階目 に変更 (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  com_A_SSR_M_0003:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 7 (P20)'
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+  com_A_SSR_M_0004:
+    custom_limit: 1
+    options:
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +5 (P70)'
+      max: 1
+    - id: 体力消費コスト値-
+      label: 体力消費コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 体力消費 2 (P20)'
+  com_A_SSR_M_0005:
+    custom_limit: 1
+    options:
+    - id: 全力値コスト値-
+      label: 全力値コスト値-
+      type: toggle
+      apply:
+        removeFullPowerCost: true
+      effect_texts:
+      - '1段階: 全力値 消費 1 (P40)'
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: 保留 にあるスキルカードの パラメータ値増加 +5 (P70)'
+      max: 1
+  com_A_Leg_A_0001:
+    custom_limit: 0
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 12
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1スタックごと: パラメータ上昇回数+1・パラメータ値増加+20 (上限 12 回)'
+  Saki_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 効果追加
+      label: 効果追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: ターン追加 +1 (P120)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  Saki_SSR_0008:
+    custom_limit: 0
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 4
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+4 (上限 4 回)'
+  Temari_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 効果追加
+      label: 効果追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 以降の3ターンの間、ターン終了時、 パラメータ+5・ 体力消費 1 (P100)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  Kotone_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 効果追加
+      label: 効果追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象強化 +50%（5ターン） (P100)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  Mao_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 効果変更
+      label: 効果変更
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+18（ 好調 効果を2倍適用） 好調 状態の場合、 パラメータ+20（ 集中 効果を3倍適用） (P100)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  Lilja_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 開始時手札に入る
+      label: 開始時手札に入る
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: レッスン開始時手札に入る (P70)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  China_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 元気分パラメータ+
+      label: 元気分パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 の 180 %分パラメータ上昇 (P100)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  Sumika_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 次のターン、パラメータ+5 2ターン後、パラメータ+5 (P100)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  Sumika_SSR_0008:
+    custom_limit: 0
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 2
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+7 (上限 2 回)'
+  Hiro_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +3（ やる気 効果を1.5倍適用） (P100)'
+    - id: レッスン中1回の制限削除
+      label: レッスン中1回の制限削除
+      type: toggle
+      apply:
+        noExile: true
+      effect_texts:
+      - '1段階: レッスン中1回 (P40)'
+  Sena_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 2
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+10 (上限 2 回)'
+    - id: 成長変更
+      label: 成長変更
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: [成長] 強気 効果のスキルカード使用後、自身の パラメータ値増加 +15・ パラメータ上昇回数 +1 コスト値増加 +1 （2回まで） (P100)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  Sena_SSR_0007:
+    custom_limit: 0
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 1
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+2 (上限 1 回)'
+  Ume_SSR_0001:
+    custom_limit: 0
+    options:
+    - id: 効果変更
+      label: 効果変更
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 体力消費 3 以降2回まで、 アクティブスキルカード を3回使用するごとに、 元気 +2 （レッスン中に使用したスキルカード1枚ごとに、 元気 増加量+12） (P100)'
+    - id: スキルカード使用数追加+
+      label: スキルカード使用数追加+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  Ume_SSR_0005:
+    custom_limit: 0
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 1
+      apply: {}
+      effect_texts:
+      - '1スタックごと: パラメータ値増加+5 (上限 1 回)'
+  Rinami_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 効果変更
+      label: 効果変更
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 以降、ターン開始時、体力が50%以上の場合、 集中 +2 体力回復5 (P100)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  Rinami_SSR_0005:
+    custom_limit: 0
+    options:
+    - id: 成長スタック
+      label: 成長スタック (カード固有 [成長] 効果)
+      type: counter
+      max: 4
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1スタックごと: パラメータ上昇回数+1 (上限 4 回)'
+  SP_SR_0001:
+    custom_limit: 2
+    options:
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 13 (P40)'
+      - '2段階: 元気 + 22 (P70)'
+      max: 2
+    - id: パラメータ上昇回数+
+      label: パラメータ上昇回数+
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: パラメータ+10 (2回) (P100)'
+      max: 1
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 13 (P40)'
+      - '2段階: パラメータ+ 21 (P70)'
+      max: 2
+  SP_SR_0002:
+    custom_limit: 2
+    options:
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 10 (P40)'
+      - '2段階: 元気 + 19 (P70)'
+      max: 2
+    - id: 消費体力減少+
+      label: 消費体力減少+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 4 ターン (P40)'
+      - '2段階: 消費体力減少 6 ターン (P70)'
+      max: 2
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+  SP_SR_0003:
+    custom_limit: 2
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 10 (P40)'
+      - '2段階: パラメータ+ 26 (P70)'
+      max: 2
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 9 (P40)'
+      - '2段階: 元気 + 18 (P70)'
+      max: 2
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 〔2回目の元気を追加〕 (P70)'
+  SP_SR_0004:
+    custom_limit: 2
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 9 (P40)'
+      - '2段階: パラメータ+ 25 (P70)'
+      max: 2
+    - id: 消費体力減少+
+      label: 消費体力減少+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 3 ターン (P40)'
+      - '2段階: 消費体力減少 5 ターン (P70)'
+      max: 2
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+  SP_SR_0005:
+    custom_limit: 1
+    options:
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+  SP_SR_0006:
+    custom_limit: 2
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 9 （2回） (P40)'
+      - '2段階: パラメータ+ 17 （2回） (P70)'
+      max: 2
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 2 (P20)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+  SP_SSR_0001:
+    custom_limit: 1
+    options:
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+  SP_SSR_0002:
+    custom_limit: 1
+    options:
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+  SP_SSR_0003:
+    custom_limit: 1
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 18 (P70)'
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+  SP_SSR_0004:
+    custom_limit: 1
+    options:
+    - id: 開始時手札に入る
+      label: 開始時手札に入る
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: レッスン開始時手札に入る (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+  SP_SSR_0005:
+    custom_limit: 1
+    options:
+    - id: 開始時手札に入る
+      label: 開始時手札に入る
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: レッスン開始時手札に入る (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+  SP_SSR_0006:
+    custom_limit: 1
+    options:
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+    - id: 消費体力減少+
+      label: 消費体力減少+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 6 ターン (P70)'
+  SP_SSR_0007:
+    custom_limit: 1
+    options:
+    - id: 元気+
+      label: 元気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 12 (P70)'
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+  SP_SSR_0008:
+    custom_limit: 1
+    options:
+    - id: 元気+
+      label: 元気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 17 (P70)'
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+  SP_SSR_0009:
+    custom_limit: 1
+    options:
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+  SP_SSR_0010:
+    custom_limit: 1
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 17 (P70)'
+    - id: 元気+
+      label: 元気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 14 (P70)'
+  SP_SSR_0011:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 2 (P20)'
+    - id: 消費体力減少追加
+      label: 消費体力減少追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 2ターン (P70)'
+  SP_SSR_0012:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 0 (P20)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+  SP_SSR_0013:
+    custom_limit: 1
+    options:
+    - id: 開始時手札に入る
+      label: 開始時手札に入る
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: レッスン開始時手札に入る (P70)'
+    - id: スキルカード強化追加
+      label: スキルカード強化追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 手札をすべて レッスン中強化 (P70)'
+  SP_SSR_0014:
+    custom_limit: 1
+    options:
+    - id: 体力消費コスト値-
+      label: 体力消費コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 体力消費 0 (P20)'
+    - id: 消費体力減少追加
+      label: 消費体力減少追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 2ターン (P70)'
+  SP_SR_0007:
+    custom_limit: 2
+    options:
+    - id: 好調+
+      label: 好調+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 5 ターン (P40)'
+      - '2段階: 好調 7 ターン (P70)'
+      max: 2
+    - id: 集中+
+      label: 集中+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 集中 + 4 (P40)'
+      - '2段階: 集中 + 6 (P70)'
+      max: 2
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+  SP_SR_0008:
+    custom_limit: 2
+    options:
+    - id: 好調+
+      label: 好調+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 6 ターン (P40)'
+      - '2段階: 好調 8 ターン (P70)'
+      max: 2
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 1 (P20)'
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+  SP_SR_0009:
+    custom_limit: 2
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 2 (P20)'
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+    - id: 集中+
+      label: 集中+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 集中 + 6 (P40)'
+      - '2段階: 集中 + 8 (P70)'
+      max: 2
+  SP_SSR_0015:
+    custom_limit: 1
+    options:
+    - id: 好調+
+      label: 好調+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 6 ターン (P70)'
+    - id: 集中+
+      label: 集中+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 集中 + 6 (P70)'
+  SP_SSR_0016:
+    custom_limit: 1
+    options:
+    - id: パラメータ+
+      label: パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 57 (P70)'
+    - id: 好調追加
+      label: 好調追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 2ターン (P70)'
+  SP_SSR_0017:
+    custom_limit: 1
+    options:
+    - id: 集中+
+      label: 集中+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 集中 + 7 (P70)'
+    - id: 好調追加
+      label: 好調追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 2ターン (P70)'
+  SP_SSR_0018:
+    custom_limit: 1
+    options:
+    - id: 絶好調+
+      label: 絶好調+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 絶好調 5 ターン (P70)'
+    - id: 好調追加
+      label: 好調追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 2ターン (P70)'
+  SP_SSR_0019:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 1 (P20)'
+    - id: 好調+
+      label: 好調+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 5 ターン (P70)'
+  SP_SSR_0020:
+    custom_limit: 1
+    options:
+    - id: 好調コスト値-
+      label: 好調コスト値-
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 消費 0 (P40)'
+    - id: 好調追加
+      label: 好調追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 2ターン (P70)'
+  SP_SSR_0021:
+    custom_limit: 1
+    options:
+    - id: 条件変更
+      label: 条件変更
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好調 が 8 ターン以上の場合 (P70)'
+    - id: 条件変更
+      label: 条件変更
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 集中 が 10 以上の場合 (P70)'
+  SP_SR_0010:
+    custom_limit: 2
+    options:
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 6 (P40)'
+      - '2段階: 元気 + 15 (P70)'
+      max: 2
+    - id: レッスン中1回の制限削除
+      label: レッスン中1回の制限削除
+      type: toggle
+      apply:
+        noExile: true
+      effect_texts:
+      - '1段階: レッスン中1回 (P40)'
+    - id: 元気分パラメータ追加
+      label: 元気分パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 の30%分のパラメータ上昇 (P70)'
+  SP_SR_0011:
+    custom_limit: 2
+    options:
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +4 (P70)'
+    - id: 好印象+
+      label: 好印象+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 + 5 (P40)'
+      - '2段階: 好印象 + 8 (P70)'
+      max: 2
+    - id: 好印象分パラメータ+
+      label: 好印象分パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 の 135 %分のパラメータ上昇 (P40)'
+      - '2段階: 好印象 の 215 %分のパラメータ上昇 (P70)'
+      max: 2
+  SP_SR_0012:
+    custom_limit: 2
+    options:
+    - id: 体力消費コスト値-
+      label: 体力消費コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 体力消費 2 (P20)'
+    - id: 元気+
+      label: 元気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 11 (P40)'
+      - '2段階: 元気 + 20 (P70)'
+      max: 2
+    - id: やる気分パラメータ+
+      label: やる気分パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: やる気 の 410 ％分パラメータ上昇 (P40)'
+      - '2段階: やる気 の 550 ％分パラメータ上昇 (P70)'
+      max: 2
+  SP_SR_0013:
+    custom_limit: 1
+    options:
+    - id: 好印象+
+      label: 好印象+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 + 5 (P70)'
+    - id: 好印象分パラメータ追加
+      label: 好印象分パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象の60%分パラメータ上昇 (P70)'
+  SP_SR_0014:
+    custom_limit: 2
+    options:
+    - id: 好印象+
+      label: 好印象+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 + 5 (P40)'
+      - '2段階: 好印象 + 8 (P70)'
+      max: 2
+    - id: やる気+
+      label: やる気+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: やる気 + 4 (P40)'
+      - '2段階: やる気 + 7 (P70)'
+      max: 2
+    - id: 消費体力減少追加
+      label: 消費体力減少追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 2ターン (P70)'
+  SP_SSR_0022:
+    custom_limit: 1
+    options:
+    - id: やる気+
+      label: やる気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 + 8 (P70)'
+    - id: 好印象+
+      label: 好印象+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: やる気 + 7 (P70)'
+  SP_SSR_0023:
+    custom_limit: 1
+    options:
+    - id: スキルカード使用数+
+      label: スキルカード使用数+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: スキルカード使用数追加 +1 (P100)'
+    - id: 好印象+
+      label: 好印象+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 + 9 (P70)'
+  SP_SSR_0024:
+    custom_limit: 1
+    options:
+    - id: 元気分パラメータ+
+      label: 元気分パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: やる気 が3以上の場合、 元気 の 110 ％分パラメータ上昇 (P70)'
+    - id: 好印象分パラメータ+
+      label: 好印象分パラメータ+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 が3以上の場合、 好印象 の 230 ％分パラメータ上昇 (P70)'
+  SP_SSR_0025:
+    custom_limit: 1
+    options:
+    - id: やる気+
+      label: やる気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: やる気 + 8 (P70)'
+    - id: 好印象+
+      label: 好印象+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 + 7 (P70)'
+  SP_SSR_0026:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 0 (P20)'
+    - id: 好印象追加
+      label: 好印象追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 +2 (P70)'
+  SP_SSR_0027:
+    custom_limit: 1
+    options:
+    - id: 好印象+
+      label: 好印象+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 + 7 (P70)'
+    - id: やる気コスト値-
+      label: やる気コスト値-
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: やる気 消費 1 (P40)'
+  SP_SSR_0028:
+    custom_limit: 1
+    options:
+    - id: 好印象追加
+      label: 好印象追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 好印象 +2 (P70)'
+    - id: やる気コスト値-
+      label: やる気コスト値-
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: やる気 消費 1 (P40)'
+  SP_SSR_0029:
+    custom_limit: 1
+    options:
+    - id: 消費体力減少追加
+      label: 消費体力減少追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 2ターン (P70)'
+    - id: 体力消費コスト値-
+      label: 体力消費コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 体力消費 1 (P20)'
+  SP_SSR_0030:
+    custom_limit: 1
+    options:
+    - id: やる気+
+      label: やる気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: やる気 + 6 (P70)'
+    - id: スキルカード強化追加
+      label: スキルカード強化追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 手札をすべて レッスン中強化 (P70)'
+  SP_SR_0015:
+    custom_limit: 2
+    options:
+    - id: 全力値+
+      label: 全力値+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 4 (P40)'
+      - '2段階: 全力値 + 6 (P70)'
+      max: 2
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 温存 に変更 (P70)'
+    - id: 消費体力減少追加
+      label: 消費体力減少追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 2ターン (P70)'
+  SP_SR_0016:
+    custom_limit: 2
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 2 (P20)'
+    - id: パラメータ+
+      label: パラメータ+
+      type: counter
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+ 30 (P40)'
+      - '2段階: パラメータ+ 46 (P70)'
+      max: 2
+    - id: 消費体力減少追加
+      label: 消費体力減少追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 消費体力減少 2ターン (P70)'
+  SP_SSR_0031:
+    custom_limit: 1
+    options:
+    - id: パラメータ追加
+      label: パラメータ追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: パラメータ+6 (P70)'
+    - id: 成長追加
+      label: 成長追加
+      type: counter
+      apply:
+        paramRepeatBonusPer: 1
+      effect_texts:
+      - '1段階: すべてのスキルカードの パラメータ値増加 +3 (P70)'
+      max: 1
+  SP_SSR_0032:
+    custom_limit: 1
+    options:
+    - id: 体力消費コスト値-
+      label: 体力消費コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: 体力消費 1 (P20)'
+    - id: 元気+
+      label: 元気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +17 (P70)'
+  SP_SSR_0033:
+    custom_limit: 1
+    options:
+    - id: 全力値増加
+      label: 全力値増加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 +2 (P70)'
+    - id: 温存追加
+      label: 温存追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 温存 に変更 (P70)'
+  SP_SSR_0034:
+    custom_limit: 1
+    options:
+    - id: コスト値-
+      label: コスト値-
+      type: toggle
+      apply:
+        removeHpCost: true
+      effect_texts:
+      - '1段階: - 1 (P20)'
+    - id: 元気追加
+      label: 元気追加
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 +9 (P70)'
+  SP_SSR_0035:
+    custom_limit: 1
+    options:
+    - id: 元気+
+      label: 元気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 元気 + 16 (P70)'
+    - id: 全力値+
+      label: 全力値+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 4 (P70)'
+  SP_SSR_0036:
+    custom_limit: 1
+    options:
+    - id: 全力値+
+      label: 全力値+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 全力値 + 5 (P70)'
+    - id: 強気+
+      label: 強気+
+      type: toggle
+      apply: {}
+      effect_texts:
+      - '1段階: 強気 2段階目に変更 (P70)'

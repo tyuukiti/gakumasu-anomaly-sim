@@ -1,0 +1,72 @@
+# 保持Pドリンク (アノマリー最終ターンで使う可能性のあるもののみ)
+# - センブリ: センブリソーダ
+# - 強気/温存変更ドリンク: ジンジャーエール / ほうじ茶 / ほっと緑茶 / 初星スーパーソーダ
+# - 初星ホエイプロテイン
+#
+# 取得元: https://seesaawiki.jp/gakumasu/d/P%A5%C9%A5%EA%A5%F3%A5%AF%B0%EC%CD%F7
+#
+# 効果スキーマはカードと共通 (services/effectExecutor.ts が処理):
+#   - state_change   : スタンス変更
+#   - full_power     : 全力値 +N
+#   - param_up_pct   : パラメータ上昇量増加 +N% (強気倍率と加算で重畳)
+#   - draw           : カードを N 枚引く
+#   - extra_use      : スキルカード使用数 +N
+
+drinks:
+- id: drink_sembri_soda
+  name: センブリソーダ
+  rarity: SR
+  plan: free
+  cost:
+    hp: 2
+  effects:
+  - { kind: param_up_pct, value: 10 }
+  - { kind: draw, value: 2 }
+  remark: パラメータ上昇量増加 10%（5ターン)・ターン開始後ドロー継続効果あり。最終ターンでは即時効果のみ反映。
+
+- id: drink_ginger_ale
+  name: ジンジャーエール
+  rarity: R
+  plan: anomaly
+  cost: {}
+  effects:
+  - { kind: state_change, note: { to: 強気, level: 1 } }
+  - { kind: full_power, value: 1 }
+  remark: 強気スタンスへ切替 + 全力値+1。温存からの遷移なら熱意ゲイン発動。
+
+- id: drink_houji_cha
+  name: ほうじ茶
+  rarity: R
+  plan: anomaly
+  cost: {}
+  effects:
+  - { kind: state_change, note: { to: 温存, level: 1 } }
+  - { kind: full_power, value: 2 }
+  remark: 温存スタンス1段階へ切替 + 全力値+2。
+
+- id: drink_hot_green_tea
+  name: ほっと緑茶
+  rarity: SR
+  plan: anomaly
+  cost: {}
+  effects:
+  - { kind: state_change, note: { to: 温存, level: 2 } }
+  remark: 温存2段階へ切替 (山札/捨て札を保留に移動効果は v1 未実装)。
+
+- id: drink_super_soda
+  name: 初星スーパーソーダ
+  rarity: SSR
+  plan: anomaly
+  cost: {}
+  effects:
+  - { kind: state_change, note: { to: 強気, level: 2 } }
+  remark: 強気2段階目へ切替 (消費体力減少1ターン効果は v1 未実装)。温存からの遷移なら熱意ゲイン発動。
+
+- id: drink_whey_protein
+  name: 初星ホエイプロテイン
+  rarity: SSR
+  plan: free
+  cost: {}
+  effects:
+  - { kind: extra_use, value: 1 }
+  remark: スキルカード使用数追加+1。アタック枚数を1回増やす。
