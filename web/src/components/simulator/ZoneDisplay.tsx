@@ -11,6 +11,7 @@ import { useState } from 'react'
 import { useSimulatorStore } from '../../stores/simulatorStore'
 import type { CardRef } from '../../types/gameState'
 import type { CardCustomizationOption } from '../../types/customization'
+import { trackEvent } from '../../utils/analytics'
 
 interface Props {
   zone: 'hand' | 'deck' | 'discard'
@@ -118,7 +119,16 @@ export default function ZoneDisplay({ zone, label }: Props) {
                 </span>
                 {options.length > 0 && (
                   <button
-                    onClick={() => setEditingId(isEditing ? null : cr.instanceId)}
+                    onClick={() => {
+                      const opening = !isEditing
+                      setEditingId(opening ? cr.instanceId : null)
+                      if (opening) {
+                        trackEvent('customize_panel_open', {
+                          card_id: cr.cardId,
+                          zone,
+                        })
+                      }
+                    }}
                     className="text-gray-400 hover:text-indigo-600 text-[12px]"
                     aria-label="カスタマイズ"
                     title="カスタマイズ"

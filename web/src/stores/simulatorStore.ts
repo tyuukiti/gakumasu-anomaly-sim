@@ -14,6 +14,7 @@ import { buildDrinkCatalog } from '../services/drinkCatalog'
 import { loadAllCards, loadAllDrinks, loadAllCustomizations } from '../services/yamlLoader'
 import { searchOptimalMoves } from '../services/moveSearch'
 import { makeInitialState } from '../services/gameState'
+import { trackEvent } from '../utils/analytics'
 
 interface SimulatorState {
   // ---- データ ----
@@ -115,24 +116,32 @@ export const useSimulatorStore = create<SimulatorState>((set, get) => ({
       const catalog = buildCatalog(cards)
       const drinkCatalog = buildDrinkCatalog(drinks)
       set({ cards, drinks, catalog, drinkCatalog, customizationOptions, isLoading: false, error: null })
+      trackEvent('app_initialized', {
+        card_count: cards.length,
+        drink_count: drinks.length,
+      })
     } catch (e) {
       console.error(e)
       set({ isLoading: false, error: e instanceof Error ? e.message : String(e) })
+      trackEvent('app_init_error', { message: e instanceof Error ? e.message : String(e) })
     }
   },
 
   addToZone: (zone, ref) => {
     set((s) => ({ [zone]: [...s[zone], ref] } as Partial<SimulatorState>))
+    trackEvent('card_add', { zone, card_id: ref.cardId, level: ref.level })
   },
 
   removeFromZone: (zone, instanceId) => {
     set((s) => ({
       [zone]: s[zone].filter((c) => c.instanceId !== instanceId),
     } as Partial<SimulatorState>))
+    trackEvent('card_remove', { zone })
   },
 
   clearZone: (zone) => {
     set({ [zone]: [] } as Partial<SimulatorState>)
+    trackEvent('zone_clear', { zone })
   },
 
   updateCardCustom: (zone, instanceId, partial) => {
@@ -141,15 +150,29 @@ export const useSimulatorStore = create<SimulatorState>((set, get) => ({
         c.instanceId === instanceId ? { ...c, ...partial } : c,
       ),
     } as Partial<SimulatorState>))
+    trackEvent('card_customize', {
+      zone,
+      changed_keys: Object.keys(partial).join(','),
+    })
   },
 
-  addDrink: (ref) => set((s) => ({ heldDrinks: [...s.heldDrinks, ref] })),
-  removeDrink: (instanceId) =>
-    set((s) => ({ heldDrinks: s.heldDrinks.filter((d) => d.instanceId !== instanceId) })),
-  clearDrinks: () => set({ heldDrinks: [] }),
+  addDrink: (ref) => {
+    set((s) => ({ heldDrinks: [...s.heldDrinks, ref] }))
+    trackEvent('drink_add', { drink_id: ref.drinkId })
+  },
+  removeDrink: (instanceId) => {
+    set((s) => ({ heldDrinks: s.heldDrinks.filter((d) => d.instanceId !== instanceId) }))
+    trackEvent('drink_remove')
+  },
+  clearDrinks: () => {
+    set({ heldDrinks: [] })
+    trackEvent('drink_clear')
+  },
 
   updateStatus: (partial) => {
     set((s) => ({ status: { ...s.status, ...partial } }))
+    // 個々の入力は頻度が高いので key 名だけ送る (値は送らない)
+    trackEvent('status_change', { keys: Object.keys(partial).join(',') })
   },
 
   resetAll: () => {
@@ -161,25 +184,57 @@ export const useSimulatorStore = create<SimulatorState>((set, get) => ({
       status: { ...DEFAULT_STATUS },
       result: null,
     })
+    trackEvent('reset_all')
   },
 
   runSearch: () => {
     const { catalog, drinkCatalog, hand, deck, discard, heldDrinks, status } = get()
     if (!catalog || !drinkCatalog) return
     set({ isSearching: true })
+    trackEvent('search_start', {
+      hand_size: hand.length,
+      deck_size: deck.length,
+      discard_size: discard.length,
+      drinks_size: heldDrinks.length,
+      cards_playable: status.cardsPlayableThisTurn,
+      stance_kind: status.stance.kind,
+      stance_level: status.stance.level,
+      passion_buff: status.passionBuff,
+      passion_gain_bonus_pct: status.passionGainBonusPct,
+      param_boost_pct: status.paramBoostPct,
+    })
     setTimeout(() => {
       try {
         const initial = makeInitialState(hand, deck, discard, status, heldDrinks)
+        const t0 = performance.now()
         const result = searchOptimalMoves(initial, catalog, drinkCatalog)
+        const elapsed = performance.now() - t0
         set({ result, isSearching: false })
+        const topScore = result.patterns[0]?.expectedScore ?? 0
+        const topProb = result.patterns[0]?.patternProbability ?? 0
+        trackEvent('search_complete', {
+          pattern_count: result.patterns.length,
+          explored_leaves: result.exploredLeafCount,
+          pruned_count: result.prunedCount,
+          elapsed_ms: Math.round(elapsed),
+          top_score: Math.round(topScore),
+          top_probability: Math.round(topProb * 100) / 100,
+        })
       } catch (e) {
         console.error(e)
         set({ isSearching: false, error: e instanceof Error ? e.message : String(e) })
+        trackEvent('search_error', { message: e instanceof Error ? e.message : String(e) })
       }
     }, 0)
   },
 
   exportState: () => {
+    trackEvent('state_export', {
+      hand_size: get().hand.length,
+      deck_size: get().deck.length,
+      discard_size: get().discard.length,
+      drinks_size: get().heldDrinks.length,
+    })
     const { hand, deck, discard, heldDrinks, status, catalog, drinkCatalog } = get()
     // CardRef を可読 dict に変換 (カード名も入れる)
     const toCard = (cr: CardRef) => {
@@ -274,8 +329,17 @@ export const useSimulatorStore = create<SimulatorState>((set, get) => ({
         status: newStatus,
         result: null,
       })
+      trackEvent('state_import', {
+        hand_size: newHand.length,
+        deck_size: newDeck.length,
+        discard_size: newDiscard.length,
+        drinks_size: newDrinks.length,
+      })
       return { ok: true }
     } catch (e) {
+      trackEvent('state_import_error', {
+        message: e instanceof Error ? e.message : String(e),
+      })
       return { ok: false, error: e instanceof Error ? e.message : String(e) }
     }
   },

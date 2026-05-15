@@ -4,6 +4,7 @@
  */
 import { useSimulatorStore } from '../../stores/simulatorStore'
 import type { StateSnapshot } from '../../types/searchResult'
+import { trackEvent } from '../../utils/analytics'
 
 function StateLine({ s, prev }: { s: StateSnapshot; prev?: StateSnapshot }) {
   const diff = (cur: number, prv?: number) => {
@@ -190,7 +191,17 @@ export default function ResultPanel() {
                     </div>
                   )}
                   {step.alternatives && step.alternatives.length > 0 && (
-                    <details className="ml-6 mt-0.5">
+                    <details
+                      className="ml-6 mt-0.5"
+                      onToggle={(e) => {
+                        if ((e.currentTarget as HTMLDetailsElement).open) {
+                          trackEvent('alternatives_open', {
+                            alt_count: step.alternatives!.length,
+                            pattern_rank: i + 1,
+                          })
+                        }
+                      }}
+                    >
                       <summary className="text-[11px] text-amber-700 cursor-pointer hover:underline">
                         ⚠ もし違うカードを引いた場合 ({step.alternatives.length}件)
                       </summary>
