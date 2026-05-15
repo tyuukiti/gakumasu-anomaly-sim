@@ -136,7 +136,12 @@ N = 温存1段階=5 / 温存2段階=8 / のんびり=10
 
 `main` ブランチに push すると `.github/workflows/deploy.yml` が自動でビルド & GitHub Pages 公開します。
 
-ワークフロー側で `actions/configure-pages` の `enablement: true` を使っているので、**Settings 側の手動設定は不要**です。初回 push でも自動的に Pages を有効化してくれます。
+### 初回セットアップ (一度だけ)
+
+GitHub の `Settings → Pages → Source` を **「GitHub Actions」** に設定してください。
+これがされていないと workflow の `Setup Pages` ステップが「Resource not accessible by integration」で失敗します。
+
+一度設定すれば、以降の `main` への push は自動でビルド・デプロイされます。
 
 `base` パスは `vite.config.ts` 内で `GITHUB_REPOSITORY` 環境変数から自動解決するので、リポジトリ名を変えても workflow 修正は不要です。
 
