@@ -47,10 +47,9 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # Pages がまだ有効化されていない場合に自動有効化する
-          # (Settings → Pages → Source = GitHub Actions を手で設定する代わり)
-          enablement: true
+        # 注意: 初回のみ Settings → Pages → Source = "GitHub Actions" を手動設定する必要あり。
+        # 一度有効化すれば以降の deploy は自動で動く。
+        # (enablement: true は GITHUB_TOKEN に admin 権限が必要で標準では動かない)
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
